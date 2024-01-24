@@ -1,0 +1,33 @@
+.video-banner-container{
+    margin-top: 70px;
+    .video-banner-container-box{
+        width: 1220px;
+        height: 400px;
+        margin: auto;
+        background-color: green;
+        
+        .video-banner-container-box__video{
+            position: absolute;
+            height: 550px;
+            width: inherit;
+            background-color: red;
+        }
+    }
+
+    .video-banner-container-image-info{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding-bottom: 50px;
+        height:350px;
+        background-color: black;
+
+            .video-banner-container-image-logo-box{
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: green;
+                    width: 1560px;
+            }
+    }
+}
+

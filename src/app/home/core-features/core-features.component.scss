@@ -1,0 +1,48 @@
+.features-container {
+    color: white;
+    margin-top: 70px;
+
+
+    .features-container-title-cards-box {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+}
+
+.features-container-title-box {
+
+    .features-container__subtitle{
+        color: black;
+        text-align: center;
+
+    }
+    .features-container__title{
+        color:black;
+        text-align: center;
+    }
+}
+
+
+.features-container-cards-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: red;
+    gap: 15px;
+}
+
+
+.features-card{
+    width: 250px;
+    border: 1px solid black;
+    padding: 20px;
+    .features-card__icon{
+        width: 80px;
+        height: 80px;
+        background-color: green;
+    }
+
+}
+
