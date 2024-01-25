@@ -19,6 +19,7 @@ import { ClientsFeedbacksComponent } from './home/clients-feedbacks/clients-feed
 import { FooterComponent } from './footer/footer.component';
 
 import { SidebarModule } from 'primeng/sidebar';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { SidebarModule } from 'primeng/sidebar';
     BannerComponent,
     VideoBannerComponent,
     ClientsFeedbacksComponent,
-    FooterComponent
+    FooterComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
