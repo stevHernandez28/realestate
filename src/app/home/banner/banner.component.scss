@@ -1,53 +1,98 @@
-.banner-container{
-    display: flex;
+.banner-container {
     margin-top: 70px;
-    height: 350px;
     background-color: black;
-    overflow
-    .banner-container__left{
-        height: 310px;
-    }
+}
+.banner-container-wrapper{
+    display: flex;
+    max-width: 1520px;
+    margin: auto;
 
-    .banner-container__right{
-        position:relative;
-        top: -15%;
-        height: 400px;
-    }
+}
+.banner-container__left {
+    height: 350px;
+    position: relative;
+    top: 30px;
 }
 
-.banner-container-box{
+.banner-container__right {
+    position: relative;
+    top: -15%;
+    height: 400px;
+}
+
+.banner-container-box {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     flex-direction: column;
 
-    .banner-container-box__subtitle{
+    .banner-container-box__subtitle {
         color: white;
         margin: 15px;
     }
-    .banner-container-box__title{
-        color:white;
+
+    .banner-container-box__title {
+        color: white;
         margin: 0px;
         font-size: 64px;
+        text-align: center;
+
     }
 
-    .banner-container-box-buttons{
+    .banner-container-box-buttons {
         margin-top: 40px;
 
-        .buttons__call{
+        .buttons__call {
             background-color: orange;
-            color:white;
+            color: white;
             padding: 15px;
         }
 
-        .buttons__contactus{
+        .buttons__contactus {
             margin-left: 15px;
-            color:white;
+            color: white;
             background-color: orange;
             padding: 15px;
         }
-    
+
     }
 }
 
+@media only screen and (max-width:1128px) {
+    .banner-container__left {
+        width: 350px;
+        height: 300px;
+    }
+
+    .banner-container-box {
+        .banner-container-box__title {
+            font-size: 52px;
+            text-align: center;
+        }
+    }
+
+    .banner-container {
+        .banner-container__right {
+            width: 300px;
+            height: 320px;
+            top: 8%;
+
+        }
+    }
+}
+
+
+@media only screen  and (max-width:880px)
+{
+    .banner-container {
+
+        .banner-container__left {
+            display: none;
+        }
+
+        .banner-container__right{
+            display:none;
+        }
+    }
+}
