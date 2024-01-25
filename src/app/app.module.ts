@@ -16,6 +16,7 @@ import { CoreFeaturesComponent } from './home/core-features/core-features.compon
 import { BannerComponent } from './home/banner/banner.component';
 import { VideoBannerComponent } from './home/video-banner/video-banner.component';
 import { ClientsFeedbacksComponent } from './home/clients-feedbacks/clients-feedbacks.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { ClientsFeedbacksComponent } from './home/clients-feedbacks/clients-feed
     CoreFeaturesComponent,
     BannerComponent,
     VideoBannerComponent,
-    ClientsFeedbacksComponent
+    ClientsFeedbacksComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
