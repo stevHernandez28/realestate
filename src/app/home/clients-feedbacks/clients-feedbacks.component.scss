@@ -67,3 +67,23 @@
 .feedback-card-footer-user-info__name {
     margin: 0px;
 }
+
+@media only screen and (max-width:404px) {
+    .feedback-card {
+        width: 290px;
+
+        .feedback-card-header {
+
+            img {
+                width: 290px;
+            }
+        }
+
+        .feedback-card-footer {
+            width: 290px;
+            position: absolute;
+            left: 5%;
+            top: 35%;
+        }
+    }
+}
