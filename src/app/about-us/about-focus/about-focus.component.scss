@@ -1,0 +1,54 @@
+.max-width-growth {
+    max-width: 1220px;
+    margin: auto;
+}
+
+.focus-box {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.focus-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 70px;
+    background-color: lightgray;
+}
+
+.focus-container-title-box {
+    text-align: center;
+}
+
+.focus-container-card-wrapper {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.focus-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    width: 350px;
+    height: 450px;
+
+    .focus-card-header {
+        margin: auto;
+        width: 80px;
+        height: 80px;
+        background-color: red;
+    }
+
+    .focus-card-body {
+
+        .focus-card__description {
+            line-height: 28px;
+        }
+    }
+
+
+}
