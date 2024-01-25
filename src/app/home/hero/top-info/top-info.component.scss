@@ -1,11 +1,11 @@
 .info-container{
     background-color: #0b2c3d;
-
+    width: 100%;
 }
 .info-container-wrapper{
     margin: auto;
     display: flex;
-    width: 1220px;
+    max-width: 1220px;
     justify-content: space-between;
 }
 
@@ -34,4 +34,13 @@
     display: flex;
 
 
+}
+
+@media only screen and (max-width:768px) {
+    .info-container-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }
