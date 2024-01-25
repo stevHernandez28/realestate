@@ -7,7 +7,7 @@
     display: flex;
     margin:auto;
     height: 100%;
-    width: 1220px;
+    max-width: 1220px;
     justify-content:space-between;
     align-items: center;
 }
@@ -39,3 +39,19 @@ a{
 a:visited{
     color: none;
 }
+p-button{
+    display: none;
+}
+
+
+@media only screen and (max-width:768px) {
+    .nav-container-elements-box{
+        display: none;
+    }
+    p-button{
+        display: block;
+    }
+    
+}
+
+

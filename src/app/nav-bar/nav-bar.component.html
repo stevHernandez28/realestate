@@ -3,7 +3,14 @@
         <div class="navbar-container-logo">
                 <p>hola</p>
         </div>
-
+        <p-sidebar [(visible)]="sidebarVisible" position="right">
+            <h3>Sidebar</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </p-sidebar>
+        <p-button (click)="sidebarVisible = true" icon="pi pi-arrow-right"></p-button>
         <div class="nav-container-elements-box">
             <ul class="nav-container-elements">
                 <a href="/" class="nav-container-elements__home">Home</a>

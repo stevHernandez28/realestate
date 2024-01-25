@@ -18,6 +18,7 @@ import { VideoBannerComponent } from './home/video-banner/video-banner.component
 import { ClientsFeedbacksComponent } from './home/clients-feedbacks/clients-feedbacks.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { SidebarModule } from 'primeng/sidebar';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ButtonModule
+    ButtonModule,
+    SidebarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
