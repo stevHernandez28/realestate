@@ -31,6 +31,7 @@ import { ButtonModule } from 'primeng/button';
 import { PropertyComponent } from './property/property.component';
 import { PropertyListComponent } from './property/property-list/property-list.component';
 import { PropertyFilterComponent } from './property/property-filter/property-filter.component';
+import { PropertyListItemComponent } from './property/property-list/property-list-item/property-list-item.component';
 
 @NgModule({
   declarations: [
@@ -55,8 +56,8 @@ import { PropertyFilterComponent } from './property/property-filter/property-fil
     AgentDetailsContentFormComponent,
     PropertyComponent,
     PropertyListComponent,
-    PropertyFilterComponent
-  ],
+    PropertyFilterComponent,
+    PropertyListItemComponent  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
