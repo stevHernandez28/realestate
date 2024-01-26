@@ -28,6 +28,9 @@ import { AgentDetailsContentFormComponent } from './agent-details/agent-details-
 import { DividerModule } from 'primeng/divider';
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
+import { PropertyComponent } from './property/property.component';
+import { PropertyListComponent } from './property/property-list/property-list.component';
+import { PropertyFilterComponent } from './property/property-filter/property-filter.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +52,10 @@ import { ButtonModule } from 'primeng/button';
     AboutAgentsComponent,
     AgentDetailsComponent,
     AgentDetailsContentComponent,
-    AgentDetailsContentFormComponent
+    AgentDetailsContentFormComponent,
+    PropertyComponent,
+    PropertyListComponent,
+    PropertyFilterComponent
   ],
   imports: [
     BrowserModule,
