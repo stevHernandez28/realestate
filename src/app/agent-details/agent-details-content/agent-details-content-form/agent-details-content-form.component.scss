@@ -31,3 +31,32 @@
     max-width: 800px;
     min-width: 600px;
 }
+
+@media only screen and (max-width:792px)
+{
+    .form-contact{
+        grid-template-columns: repeat(1fr,1);
+        grid-template-rows: repeat(1fr,4);
+    }
+
+
+    .form-contact__name{
+        grid-column: 1/1;
+        grid-row: 1/1;
+    }
+    .form-contact__email{
+        grid-column: 1/1;
+        grid-row: 2/2;
+    }
+    
+    .form-contact__message{
+        grid-column: 1/1;
+        grid-row: 5/5;
+    
+        height: 200px;
+        max-height: 200px;
+        min-height: 200px;
+        max-width: 800px;
+        min-width: 300px;
+    }
+}

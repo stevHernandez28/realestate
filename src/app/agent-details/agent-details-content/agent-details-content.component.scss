@@ -32,3 +32,23 @@
     line-height:32px;
     margin: 0px;
 }
+@media only screen and (max-width:1110px) {
+
+    .agent-container-box{
+        flex-direction: column;
+
+        .container-box-left{
+            .container-box-left__profile{
+                width: 330px;
+                height: 330px;
+                text-align: center;
+            }
+        }
+       
+    }
+
+    .container-box-left{
+        margin: auto;
+    }
+   
+}
