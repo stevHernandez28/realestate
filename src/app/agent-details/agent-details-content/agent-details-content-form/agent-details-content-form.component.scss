@@ -1,0 +1,33 @@
+.form-container-title-box{
+    border-left: 1px solid black;
+    padding-left: 10px;
+}
+
+.form-contact{
+    display: grid;
+    grid-template-columns: repeat(1fr,3);
+    grid-template-rows: repeat(1fr,3);
+    gap: 20px;
+}
+
+.form-contact > input, textarea {
+    padding: 10px;
+}
+
+.form-contact__name{
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+.form-contact__email{
+    grid-column: 2/2;
+}
+
+.form-contact__message{
+    grid-column: 1/3;
+
+    height: 200px;
+    max-height: 200px;
+    min-height: 200px;
+    max-width: 800px;
+    min-width: 600px;
+}

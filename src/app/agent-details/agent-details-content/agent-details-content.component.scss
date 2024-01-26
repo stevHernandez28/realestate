@@ -1,0 +1,34 @@
+
+
+.max-width-growth {
+    max-width: 1220px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.agent-container-box{
+    display: flex;
+    gap: 40px;
+
+    .container-box-left{
+
+
+        .container-box-left__profile{
+            width: 430px;
+            height: 430px;
+            text-align: center;
+        }
+    }
+}
+
+.container-box-left__title{
+    font-size: 32px;
+}
+.container-box-left__title, .container-box-left__subtitle{
+    text-align: center;
+}
+
+.container-box-right__content{
+    line-height:32px;
+    margin: 0px;
+}

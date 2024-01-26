@@ -1,0 +1,21 @@
+.max-width-growth {
+    max-width: 1220px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+
+.about-container {
+    background-color: rgb(255, 255, 255);
+}
+.about-container-header {
+    background-color: lightgray;
+}
+.about-container-header-box {
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: starrt;
+    justify-content: center;
+    margin: auto;
+}
