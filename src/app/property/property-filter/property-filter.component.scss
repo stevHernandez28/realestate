@@ -1,0 +1,26 @@
+.container-filter{
+    width: 100%;
+    border: 1px solid rgba(0,0,0,.1);
+    padding:25px;
+    width: 390px;
+}
+
+.container-filter__title{
+    text-align: start;
+}
+
+.container-filter-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="checkbox"]{
+    margin-right: 12px;
+}
+@media only screen and (max-width:1162px) {
+    .container-filter, .container-filter__title{
+        display: none;
+    }
+    
+}

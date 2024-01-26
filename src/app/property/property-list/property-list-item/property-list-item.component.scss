@@ -68,3 +68,29 @@
         }
     }
 }
+@media only screen and (max-width:768px) {
+    .list-item{
+        width: 600px;
+        flex-direction: column;
+    }
+    .list-item-left{
+        width: 100%;
+    }
+    .list-item-left__property{
+        width: calc(600px - 60px);
+        height:calc(600px - 60px);
+    }
+
+}
+
+@media only screen and (max-width:588px) {
+    .list-item{
+        width: 320px;
+        flex-direction: column;
+    }
+    .list-item-left__property{
+        width: calc(320px - 60px);
+        height:calc(320px - 60px);
+    }
+
+}

@@ -23,15 +23,17 @@ import { AboutAgentsComponent } from './about-us/about-agents/about-agents.compo
 import { AgentDetailsComponent } from './agent-details/agent-details.component';
 import { AgentDetailsContentComponent } from './agent-details/agent-details-content/agent-details-content.component';
 import { AgentDetailsContentFormComponent } from './agent-details/agent-details-content/agent-details-content-form/agent-details-content-form.component';
+import { PropertyComponent } from './property/property.component';
+import { PropertyListComponent } from './property/property-list/property-list.component';
+import { PropertyFilterComponent } from './property/property-filter/property-filter.component';
+import { PropertyListItemComponent } from './property/property-list/property-list-item/property-list-item.component';
 
 
 import { DividerModule } from 'primeng/divider';
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
-import { PropertyComponent } from './property/property.component';
-import { PropertyListComponent } from './property/property-list/property-list.component';
-import { PropertyFilterComponent } from './property/property-filter/property-filter.component';
-import { PropertyListItemComponent } from './property/property-list/property-list-item/property-list-item.component';
+import { AccordionModule } from 'primeng/accordion';
+
 
 @NgModule({
   declarations: [
@@ -57,14 +59,16 @@ import { PropertyListItemComponent } from './property/property-list/property-lis
     PropertyComponent,
     PropertyListComponent,
     PropertyFilterComponent,
-    PropertyListItemComponent  ],
+    PropertyListItemComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ButtonModule,
     SidebarModule,
-    DividerModule
+    DividerModule,
+    AccordionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
