@@ -27,14 +27,15 @@ import { PropertyComponent } from './Components/property/property.component';
 import { PropertyListComponent } from './Components/property/property-list/property-list.component';
 import { PropertyFilterComponent } from './Components/property/property-filter/property-filter.component';
 import { PropertyListItemComponent } from './Components/property/property-list/property-list-item/property-list-item.component';
+import { ContactMeComponent } from './Components/contact-me/contact-me.component';
+import { FAQComponent } from './Components/faq/faq.component';
 
 
 import { DividerModule } from 'primeng/divider';
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
 import { AccordionModule } from 'primeng/accordion';
-import { ContactMeComponent } from './Components/contact-me/contact-me.component';
-
+import { DropdownModule } from 'primeng/dropdown';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { ContactMeComponent } from './Components/contact-me/contact-me.component
     PropertyListComponent,
     PropertyFilterComponent,
     PropertyListItemComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    FAQComponent
    ],
   imports: [
     BrowserModule,
@@ -70,7 +72,8 @@ import { ContactMeComponent } from './Components/contact-me/contact-me.component
     ButtonModule,
     SidebarModule,
     DividerModule,
-    AccordionModule
+    AccordionModule,
+    DropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]

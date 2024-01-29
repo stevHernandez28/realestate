@@ -1,3 +1,5 @@
+@import "/src/styles/variables.scss";
+
 .navbar-container{ 
     margin: 0px;
     height: 100px;
@@ -18,7 +20,10 @@
     width: 120px;
     height: 50px;
 }
-
+.navbar-container__logo{
+    width:150px;
+    height: 65px;
+}
 .nav-container-elements-box{
     display: flex;
     justify-content: space-between;
@@ -33,7 +38,25 @@
 .nav-container-elements__addListing{
     margin-left: 35px;
     width: 155px;
+    font-family: $font-family-subtitle;
+    background-color: $primary-color;
+    color:$text-color;
+    border:none;
+    transition:all $animation-time ease-in;
 }
+.nav-container-elements__addListing:hover{
+    background-color: $primary-color-pressed;
+}
+
+.nav-container-elements a{
+    text-decoration: none;
+    font-family: $font-family-subtitle;
+}
+
+.nav-container-elements a:active, a:visited{
+    color:black;
+}
+
 a{
     text-decoration: none;
 
