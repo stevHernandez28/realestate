@@ -1,3 +1,6 @@
+
+@import "/src/styles/variables.scss";
+
 .feedback-container {
     background-color: white;
     margin-top: 70px;
@@ -49,6 +52,23 @@
     }
 }
 
+.feedback-container-title-box{
+    font-family: $font-family-title;
+
+    .feedback-container__subtitle, .feedback-container__title{
+        margin: 0px;
+    }
+    
+    .feedback-container__subtitle{
+        font-size: $font-size-subtitle;
+        color:gray;
+        font-weight: 400;
+    }
+    .feedback-container__title{
+        margin: 10px 0 40px 0;
+        font-size: $font-size-title;
+    }
+}
 .feedback-card-footer-user {
     display: flex;
     margin-top: 30px;
