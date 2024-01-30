@@ -38,17 +38,23 @@
     }
 
     .feedback-card-footer {
-        background-color: rgb(167, 166, 166);
+        background-color: rgb(255, 255, 255);
         width: 350px;
         position: absolute;
         left: 5%;
         top: 35%;
         padding: 15px;
+        box-shadow: 10px -5px 34px 1px rgba(0,0,0,0.3);
+        transition: all $animation-time ease-out;
 
         .feedback-card-footer__description {
-            line-height: 25px;
-            background-color: aqua;
-        }
+            line-height: 2;
+            font-family: $font-family-subtitle;
+            }
+    }
+
+    .feedback-card-footer:hover{
+        transform: translateY(-100px);
     }
 }
 
@@ -76,18 +82,26 @@
     img {
         width: 70px;
         height: 70px;
+        border-radius: 50%;
     }
 
 }
 
 .feedback-card-footer-user-info {
     margin-left: 20px;
+    font-family: $font-family-subtitle;
 }
 
 .feedback-card-footer-user-info__name {
     margin: 0px;
+    font-weight: 800;
+    font-size: 20px;
+    
 }
-
+.feedback-card-footer-user-info__job{
+    color:$primary-color;
+    font-weight: 800;
+}
 @media only screen and (max-width:404px) {
     .feedback-card {
         width: 290px;
