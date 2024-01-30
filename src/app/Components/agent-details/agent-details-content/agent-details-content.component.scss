@@ -1,4 +1,4 @@
-
+@import "/src/styles/variables.scss";
 
 .max-width-growth {
     max-width: 1220px;
@@ -20,16 +20,27 @@
         }
     }
 }
-
-.container-box-left__title{
-    font-size: 32px;
-}
 .container-box-left__title, .container-box-left__subtitle{
     text-align: center;
+    font-family: $font-family-title;
+    margin: 0px;
+}
+
+.container-box-left__title{
+    font-size: $font-size-title;
+    margin-top: 30px;
+}
+.container-box-left__subtitle{
+    font-size: $font-size-subtitle;
+    margin-top:10px;
+    font-weight: 400;
+    color:$primary-color;
 }
 
 .container-box-right__content{
-    line-height:32px;
+    line-height:2;
+    font-family: $font-family-subtitle;
+    font-size: $font-size-parragraph;
     margin: 0px;
 }
 @media only screen and (max-width:1110px) {
