@@ -1,8 +1,15 @@
+@import '/src/styles/variables.scss';
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
 .max-width-growth {
     max-width: 1220px;
     margin: auto;
 }
 
+  
 .focus-box {
     margin-top: 70px;
     margin-bottom: 70px;
@@ -13,11 +20,23 @@
     flex-direction: column;
     gap: 60px;
     margin-top: 70px;
-    background-color: lightgray;
+    background-color: $detail-color;
 }
 
 .focus-container-title-box {
     text-align: center;
+    font-family: $font-family-title;
+}
+
+.focus-container__titler{
+    font-size: $font-size-title;
+    margin: 0 0 50px 0;
+}
+.focus-container__subtitle{
+    margin: 0;
+    font-size: $font-size-subtitle;
+    font-weight: 400;
+    color:gray;
 }
 
 .focus-container-card-wrapper {
@@ -35,20 +54,40 @@
     text-align: center;
     width: 350px;
     height: 450px;
+    border-bottom: 5px solid transparent;
+
+    transition: all $animation-time ease-in-out;
 
     .focus-card-header {
         margin: auto;
         width: 80px;
         height: 80px;
-        background-color: red;
     }
 
     .focus-card-body {
-
+        .focus-card__title{
+            font-family: $font-family-title;
+           font-size: $font-size-subtitle;
+        }
         .focus-card__description {
-            line-height: 28px;
+            line-height: 2;
+            font-family: $font-family-subtitle;
+            font-size: $font-size-parragraph;
         }
     }
 
 
+}
+.focus-card__link{
+    transition: all $animation-time ease-in-out;
+}
+
+.focus-card__link:hover{
+    color:$primary-color;
+}
+
+.focus-card:hover{
+    box-shadow: 24px 24px 66px #e8e8e8,
+    -24px -24px 66px #ffffff;
+    border-bottom: 5px solid $primary-color;
 }
