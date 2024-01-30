@@ -102,6 +102,14 @@
     color:$primary-color;
     font-weight: 800;
 }
+@media only screen and (max-width:768px) {
+    .feedback-container-title-box{
+
+        text-align: center;
+    }
+
+}
+
 @media only screen and (max-width:404px) {
     .feedback-card {
         width: 290px;

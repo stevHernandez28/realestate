@@ -88,6 +88,22 @@
     }
 }
 
+@media only screen and (max-width:1811px)
+{
+    .banner-container__left {
+        width: 400px;
+        height: 350px;
+        top:20px;
+    }
+
+    .banner-container__right {
+        width: 500px;
+        height: 600px;
+        top:-50%;
+        left: 20px;
+    }
+}
+
 @media only screen and (max-width:1128px) {
     .banner-container__left {
         width: 350px;

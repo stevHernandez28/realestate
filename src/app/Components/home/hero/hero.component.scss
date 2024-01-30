@@ -47,5 +47,12 @@
 
 app-search-property {
   position: absolute;
-  top: 95%;
+  top: 90%;
+}
+
+@media only screen and (max-width:768px)
+{
+  app-search-property{
+    top:80%;
+  }
 }

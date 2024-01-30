@@ -73,7 +73,7 @@ p{
 }
 .footer-container-info {
     width: 350px;
-    height: 400px;
+    height: 500px;
     padding: 20px;
 }
 .footer-container-icons-description-box{
@@ -114,6 +114,7 @@ p{
 .footer-container-foot {
     width: 100%;
     padding: 10px;
+    background-color: $secondary-color;
 
     .footer-container-foot-box {
         display: flex;
@@ -141,7 +142,9 @@ p{
     font-family: $font-family-subtitle;
 
 }
-
+.footer-container__terms, .footer-container__copyright{
+    color: $text-color;
+}
 @media only screen and (max-width:800px) {
 
     .footer-container-body {
@@ -161,7 +164,15 @@ p{
 }
 
 @media only screen and (max-width:640px) {
-
+    .footer-container-head__title,
+    .footer-container-head__subtitle
+    {
+        margin-right: 0px;
+    }
+    .footer-container-head__title{
+        width: 100%;
+        text-align: center;
+    }
     .footer-container-head-title-subtitle {
         text-align: center;
         margin: auto;
@@ -171,9 +182,9 @@ p{
         position: relative;
         display: flex;
         flex-direction: column;
+   
         top: -65px;
-        background-color: orange;
-        height: 250px;
+        height: 350px;
         max-width: 320px;
     }
 }
