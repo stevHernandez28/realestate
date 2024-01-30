@@ -1,23 +1,33 @@
+@import "/src/styles/variables.scss";
+
 .banner-container {
-    margin-top: 70px;
+    margin-top:120px;
     background-color: black;
 }
 .banner-container-wrapper{
     display: flex;
+    position: relative;
+    justify-content: center;
     max-width: 1520px;
+    height: 400px;
     margin: auto;
 
 }
+
+
 .banner-container__left {
-    height: 350px;
+    height: 450px;
     position: relative;
-    top: 30px;
+    top: -10%;
+    left: -5%;
+    
 }
 
 .banner-container__right {
     position: relative;
-    top: -15%;
-    height: 400px;
+    top: -38%;
+    left: 9%;
+    height: 550px;
 }
 
 .banner-container-box {
@@ -26,17 +36,17 @@
     align-items: center;
     margin: auto;
     flex-direction: column;
-
+    font-family: $font-family-title;
     .banner-container-box__subtitle {
         color: white;
+        font-size: $font-size-subtitle;
         margin: 15px;
     }
-
+    
     .banner-container-box__title {
         color: white;
+        font-size: $font-size-bigtitle;
         margin: 0px;
-        font-size: 64px;
-        text-align: center;
 
     }
 
@@ -44,16 +54,35 @@
         margin-top: 40px;
 
         .buttons__call {
-            background-color: orange;
-            color: white;
-            padding: 15px;
+            margin-left: 35px;
+            width: 155px;
+            height: 60px;
+            font-family: $font-family-subtitle;
+            background-color: $primary-color;
+            color: $text-color;
+            border: none;
+            transition: all $animation-time ease-in;
+        }
+
+        .buttons__call:hover{
+            background-color: $primary-color-pressed;
+
         }
 
         .buttons__contactus {
-            margin-left: 15px;
-            color: white;
-            background-color: orange;
-            padding: 15px;
+            margin-left: 35px;
+            width: 155px;
+            height: 60px;
+            font-family: $font-family-subtitle;
+            background-color: transparent;
+            color: $primary-color;
+            border: 1px solid $primary-color;
+            transition: all $animation-time ease-in;
+        }
+
+        .buttons__contactus:hover{
+            border: 1px solid $primary-color-pressed;
+            color:$text-color;
         }
 
     }
