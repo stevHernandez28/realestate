@@ -1,9 +1,34 @@
+@import "/src/styles/variables.scss";
+
 .container-searchProperty-box{
     display: flex;
-    background-color: blue;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid rgba(0,0,0,.1);
+    box-shadow: -1px 37px 71px -24px rgba(0,0,0,0.4);
+    background-color: white;
+    width: 850px;
     padding: 30px;
+    gap: 50px;
 }
 
 .container-searchProperty-filters{
+    flex: 1;
     display: flex;
+    justify-content: space-between;
+}
+
+
+.container-searchProperty__find{
+    margin-left: 35px;
+    width: 155px;
+    height: 55px;
+    font-family: $font-family-subtitle;
+    background-color: $primary-color;
+    color:$text-color;
+    border:none;
+    transition:all $animation-time ease-in;
+}
+.container-searchProperty__find:hover{
+    background-color: $primary-color-pressed;
 }

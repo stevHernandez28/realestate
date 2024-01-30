@@ -36,6 +36,8 @@ import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
 import { AccordionModule } from 'primeng/accordion';
 import { DropdownModule } from 'primeng/dropdown';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -73,7 +75,9 @@ import { DropdownModule } from 'primeng/dropdown';
     SidebarModule,
     DividerModule,
     AccordionModule,
-    DropdownModule
+    DropdownModule,
+    CommonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

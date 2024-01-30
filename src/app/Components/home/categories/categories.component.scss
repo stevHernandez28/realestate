@@ -1,7 +1,10 @@
+
+@import "/src/styles/variables.scss";
+
 .categories-container{
     background-color: white;
     display: flex;
-    margin-top: 70px;
+    margin-top: 140px;
     
     .categories-container-box{
         margin: auto;
@@ -13,17 +16,25 @@
     flex-direction: column;
     justify-content: center;
 
+    .categories-container__title, .categories-container__subtitle{
+        text-align: center;
+        font-family: $font-family-title;
+        font-weight: bold;
+    }
+
     .categories-container__subtitle{
         position: relative;
-        text-align: center;
-        font-size: 12px;
+        font-size: $font-size-subtitle;
+        color:gray;
+        font-weight: 400;
         bottom:-30px;
 
 
     }
     .categories-container__title{
-        text-align: center;
         font-size: 32px;
+        font-size: $font-size-title;
+        margin: 10px 0 40px 0;
         font-weight: bold;
     }
 
@@ -59,6 +70,15 @@
     gap: 15px;
 }
 
+article > img{
+    filter:brightness(70%);
+    transition: all $animation-time ease-in-out;
+}
+article > img:hover{
+    filter:brightness(60%);
+
+}
+
 .card-gallery__title{
     color: white;
     margin: 0PX;
@@ -78,7 +98,7 @@
     color:white;
     border-radius: 20px;
     padding: 10px;
-    background-color: orange;
+    background-color: $primary-color;
 
 }
 
@@ -87,6 +107,12 @@ img{
     object-fit: cover;
     
 }
+
+.card-gallery__apartments-overlay > p{
+    font-family: $font-family-subtitle;
+}
+
+
 
 @media only screen and (max-width:1024px) {
     .categories-container-box-gallery{
