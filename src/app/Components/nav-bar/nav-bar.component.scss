@@ -1,9 +1,12 @@
 @import "/src/styles/variables.scss";
 
 .navbar-container{ 
-    margin: 0px;
+    position: sticky;
     height: 100px;
     background-color: white;
+    top: 0;
+    box-shadow: 8px 48px 109px -32px rgba(0,0,0,0.46);
+    left: 0px;
     z-index: 100000;
 }
 

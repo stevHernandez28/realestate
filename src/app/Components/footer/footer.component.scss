@@ -1,5 +1,7 @@
+@import "/src/styles/variables.scss";
+
 .footer-container {
-    background-color: black;
+    background-color: $secondary-color;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -7,30 +9,55 @@
     margin-top: 130px;
 }
 
-.footer-container-head-title-subtitle{
-    margin-right: 200px;
-
-}
-.footer-container-head__button{
-    width: 190px;
-    height: 50px;
-    margin: auto;
-}
-
 .footer-container-head {
     position: relative;
     display: flex;
     padding: 30px;
     top: -65px;
-    background-color: orange;
-    height: 150px;
-    max-width: 920px;
+    background-color: $primary-color;
+    height: 220px;
+    max-width: 1220px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container-head__title,
+.footer-container-head__subtitle {
+    font-family: $font-family-title;
+    margin: auto;
+    margin-bottom: 20px;
+    color:$text-color;
+    margin-right: 150px;
+
+}
+
+.footer-container-head__subtitle {
+    color: $text-color;
+    font-size: $font-size-subtitle; 
+    font-weight: 400;
+}
+.footer-container-head__title{
+    font-size: $font-size-title;
+}
+.footer-container-head__button {
+    margin-left: 35px;
+    width: 155px;
+    height: 60px;
+    font-family: $font-family-subtitle;
+    background-color: $secondary-color;
+    color: $text-color;
+    border: none;
+    transition: all $animation-time ease-in;
+    margin: auto;
+}
+.footer-container-head__button:hover{
+    background-color: $primary-color-pressed;
+
 }
 
 .footer-container-body {
-    background-color: green;
     display: flex;
-    max-width: 1550px;
+    max-width: 1850px;
     flex-wrap: wrap;
     margin: auto;
     justify-content: space-between;
@@ -39,7 +66,7 @@
 }
 
 .footer-container-info {
-    width: 250px;
+    width: 350px;
     height: 500px;
     border: 1px solid white;
 }
@@ -74,18 +101,19 @@
 }
 
 @media only screen and (max-width:750px) {
-    .footer-container-head-title-subtitle{
+    .footer-container-head-title-subtitle {
         margin-right: 90px;
-    
+
     }
 }
 
 @media only screen and (max-width:640px) {
 
-    .footer-container-head-title-subtitle{
+    .footer-container-head-title-subtitle {
         text-align: center;
         margin: auto;
     }
+
     .footer-container-head {
         position: relative;
         display: flex;

@@ -5,15 +5,15 @@
     background-color: white;
     margin-top: 70px;
 
-    .feedback-container-box {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        max-width: 1220px;
-
-    }
 }
 
+.feedback-container-box {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1220px;
+
+}
 .feedback-container-card-box {
     display: flex;
     justify-content: center;
