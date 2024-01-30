@@ -1,3 +1,5 @@
+@import "/src/styles/variables.scss";
+
 .max-width-growth {
     max-width: 1220px;
     margin: auto;
@@ -8,6 +10,21 @@
     margin-top: 70px;
     margin-bottom: 70px;
 }
+.agents-about__subtitle, .agents-about__title{
+    font-family: $font-family-title;
+    font-size: $font-size-title;
+    margin: 0;
+}
+
+.agents-about__title{
+    margin-bottom: 60px;
+}
+
+.agents-about__subtitle{
+    font-weight: 400;
+    color:gray;
+    font-size: $font-size-subtitle;
+}
 
 .about-agents-box {
     display: flex;
@@ -17,22 +34,58 @@
 }
 
 .about-agents-box-body {
-    background-color: red;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
+.agents-card-body{
+    
+    .agents-card-title,.agents-card-description{
+        font-family: $font-family-subtitle;
+        margin: 0px;
+    }
+    .agents-card-title{
+        font-size: $font-size-subtitle;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+    .agents-card-description{
+        color:$primary-color;
+        font-weight: 800;
+    }
+}
+
 .agents-card {
     width: 350px;
-    height: 340px;
-    background-color: gray;
-
+    height: 490px;
+    border:1px solid rgba(0,0,0,.07);
     .agents-card-header {
         width: 100%;
-        height: 65%;
+        height: 340px;
         background-color: azure;
+
+        .card-header__picture{
+            width: inherit;
+            height: inherit;
+            object-fit:cover;
+        }
     }
+}
+
+.card-footer__facebook{
+    width: 20px;
+    height: 20px;
+}
+
+.agents-card-footer{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    justify-self: center;
+    margin: auto;
+    margin-top: 20px;
 }
 
 @media only screen and (max-width:400px) {

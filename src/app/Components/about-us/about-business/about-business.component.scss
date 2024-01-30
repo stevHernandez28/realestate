@@ -97,6 +97,9 @@
     justify-content: center;
     align-items: center;
    }
+   .body-right-box-icons{
+    flex-direction: column;
+   }
    .body-right__title{
     text-align: center;
    }
@@ -106,6 +109,13 @@
    }
    .about-container-body-right-box {
     width: 290px;
+    justify-content: center;
+    align-items: center;
    }
+
+   .about-container-info__button{
+    margin-top: 50px;
+   }
+
 
 }
