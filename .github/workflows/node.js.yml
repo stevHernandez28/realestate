@@ -1,4 +1,4 @@
-name: Angular Build
+name: Deploy Angular Project to GitHub Pages
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     strategy:
@@ -23,9 +23,9 @@ jobs:
     - name: Install Dependencies
       run: npm install --legacy-peer-deps
     - name: Build
-      run: npm run build 
+      run: npm run build -- --output-path=src/dist/realestate --base-href=/${{ github.repository }}/
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
-        branch: main  # The branch the action should deploy to.
-        folder: dist/real-estate # The folder the action should deploy.
+        branch: gh-pages
+        folder: src/dist/realestate
