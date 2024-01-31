@@ -1,3 +1,6 @@
+
+@import "/src/styles/variables.scss";
+
 .container-filter{
     width: 100%;
     border: 1px solid rgba(0,0,0,.1);
@@ -5,8 +8,14 @@
     width: 390px;
 }
 
-.container-filter__title{
+.container-filter__title, .container-filter__title-box{
     text-align: start;
+    font-family: $font-family-title;
+    
+}
+
+.container-filter__title-box{
+    font-size: $font-size-title;
 }
 
 .container-filter-options{

@@ -34,6 +34,7 @@ import { FAQComponent } from './Components/faq/faq.component';
 import { DividerModule } from 'primeng/divider';
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
+import { SliderModule } from 'primeng/slider';
 import { AccordionModule } from 'primeng/accordion';
 import { DropdownModule } from 'primeng/dropdown';
 import { CommonModule } from '@angular/common';
@@ -77,7 +78,8 @@ import { FormsModule } from '@angular/forms';
     AccordionModule,
     DropdownModule,
     CommonModule,
-    FormsModule
+    FormsModule,
+    SliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

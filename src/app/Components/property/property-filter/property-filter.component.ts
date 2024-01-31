@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./property-filter.component.scss']
 })
 export class PropertyFilterComponent {
+rangeValues:number[] = [30, 70]; 
+
 
 }
