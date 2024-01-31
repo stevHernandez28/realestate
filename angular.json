@@ -14,9 +14,14 @@
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
-        "build": {
+        "build":  {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles"
+              ]
+            },
             "outputPath": "dist/real-estate",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -30,7 +35,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/styles/variables.scss"
             ],
             "scripts": []
           },

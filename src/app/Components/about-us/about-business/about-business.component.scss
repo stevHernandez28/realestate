@@ -1,0 +1,121 @@
+@import '/src/styles/variables.scss';
+
+.max-width-growth {
+    max-width: 1220px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.about-container-body {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.about-container-body-left-box {
+    background-color: red;
+    width: 400px;
+    height: 450px;
+
+    img {
+        object-fit:cover;
+        width: inherit;
+        height: inherit;
+    }
+}
+
+.about-container-body-right-box {
+    width: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .body-right__title{
+        font-size: $font-size-title;
+        font-family: $font-family-title;
+        width: 100%;
+        margin:0px;
+    }
+    
+    .body-right__description{
+        font-size: $font-size-parragraph;
+        font-family: $font-family-subtitle;
+        line-height: 2;
+
+    }
+}
+
+.body-right-box-icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.body-right-box-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container-info-banner{
+    width: 320px;
+    height: 50px;
+    background-color: green;
+}
+.box-icon{
+    width: 40px;
+    height: 40px;
+    background-color: #96031925;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+   }
+.right-box__icon{
+    width:20px;
+    height: 20px;
+
+}
+
+.about-container-info__button{
+    width: 155px;
+    height: 50px;
+    font-family: $font-family-subtitle;
+    background-color: $primary-color;
+    color:$text-color;
+    border:none;
+    transition:all $animation-time ease-in;
+}
+.about-container-info__button:hover{
+    background-color: $primary-color-pressed;
+}
+
+@media only screen and (max-width:920px) {
+   .about-container-body{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .body-right-box-icons{
+    flex-direction: column;
+   }
+   .body-right__title{
+    text-align: center;
+   }
+
+   .about-container-body-left-box {
+    width: 290px;
+   }
+   .about-container-body-right-box {
+    width: 290px;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .about-container-info__button{
+    margin-top: 50px;
+   }
+
+
+}

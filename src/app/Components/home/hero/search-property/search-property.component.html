@@ -1,0 +1,11 @@
+<div class="container-searchProperty-box">
+    <div class="container-searchProperty-filters">
+        <p-dropdown [(ngModel)]="selectedCity" [options]="cities"  optionLabel="name" placeholder="City"></p-dropdown>
+        <p-dropdown [(ngModel)]="selectedCity" [options]="cities"  optionLabel="name" placeholder="Property Status"></p-dropdown> 
+        <p-dropdown [(ngModel)]="selectedCity" [options]="cities"  optionLabel="name" placeholder="Property Type"></p-dropdown>
+    </div>
+
+    <div class="container-searchProperty-action">
+        <input class="container-searchProperty__find" type="button" value="FIND NOW">
+    </div>
+</div>

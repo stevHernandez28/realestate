@@ -1,0 +1,88 @@
+@import "/src/styles/variables.scss";
+
+.navbar-container{ 
+    position: sticky;
+    height: 100px;
+    background-color: white;
+    top: 0;
+    box-shadow: 8px 48px 109px -32px rgba(0,0,0,0.46);
+    left: 0px;
+    z-index: 100000;
+}
+
+.navbar-container-box{
+    display: flex;
+    margin:auto;
+    height: 100%;
+    max-width: 1220px;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.navbar-container-logo{
+    width: 120px;
+    height: 50px;
+}
+.navbar-container__logo{
+    width:150px;
+    height: 65px;
+}
+.nav-container-elements-box{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-container-elements{
+    display: flex;
+    gap: 45px;
+}
+
+.nav-container-elements__addListing{
+    margin-left: 35px;
+    width: 155px;
+    font-family: $font-family-subtitle;
+    background-color: $primary-color;
+    color:$text-color;
+    border:none;
+    transition:all $animation-time ease-in;
+}
+.nav-container-elements__addListing:hover{
+    background-color: $primary-color-pressed;
+}
+
+.nav-container-elements a{
+    text-decoration: none;
+    font-family: $font-family-subtitle;
+}
+
+.nav-container-elements a:active, a:visited{
+    color:black;
+}
+
+a{
+    text-decoration: none;
+
+}
+a:visited{
+    color: none;
+}
+p-button{
+    display: none;
+}
+
+
+@media only screen and (max-width:768px) {
+    .nav-container-elements-box{
+        display: none;
+    }
+    .nav-container-elements{
+        flex-direction: column;
+    }
+    p-button{
+        display: block;
+    }
+    
+}
+
+

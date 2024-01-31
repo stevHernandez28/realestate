@@ -1,0 +1,88 @@
+
+@import "/src/styles/variables.scss";
+
+.info-container{
+    background-color:  $secondary-color;
+    width: 100%;
+}
+.info-container-wrapper{
+    margin: auto;
+    display: flex;
+    max-width: 1220px;
+    justify-content: space-between;
+}
+
+.info-container-left-box{
+    color:$text-color;
+    font-family: $font-family-subtitle;
+    font-size: $font-size-sub-parragraph;
+    display: flex;
+    gap: 20px;
+}
+
+.info-container-left-box__web{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.info-container-left-box__address{
+    display: flex;
+    align-items: center;
+}
+.info-container-right-box{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.info-container-right-box__socialMediaLanguage{
+    display: flex;
+    gap:20px;
+
+}
+
+.info-container-right-box__socialMedia{
+    display: flex;
+    gap:5px
+}
+
+.right-box__facebook, .right-box__instagram{
+    width: 25px;
+    height: 25px;
+}
+
+.left-box__web-title, .left-box__address-title{
+    cursor: pointer;
+    transition: all $animation-time ease-in-out;
+}
+
+.left-box__address-title:hover, .left-box__web-title:hover{
+    color:$primary-color;
+}
+
+select{
+    outline:none;
+    font-family: $font-family-subtitle ;
+    font-size: $font-size-sub-parragraph;
+    color:$text-color;
+    background-color: transparent;
+    border: none;
+}
+select > option{
+    color:$secondary-color;
+}
+
+
+@media only screen and (max-width:768px) {
+    .info-container-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-container-left-box{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    
+}

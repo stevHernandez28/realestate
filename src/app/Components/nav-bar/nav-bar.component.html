@@ -1,0 +1,31 @@
+<app-top-info></app-top-info>
+<nav class="navbar-container">
+    <div class="navbar-container-box">
+        <div class="navbar-container-logo">
+            <img src="../../../assets/logo.png" alt="logo real estate realstate realestate"
+                class="navbar-container__logo">
+        </div>
+        <p-sidebar [(visible)]="sidebarVisible" position="right">
+            <ul class="nav-container-elements">
+                <a routerLink="/home" class="nav-container-elements__home">Home</a>
+                <a routerLink="/about" class="nav-container-elements__About">About</a>
+                <a routerLink="/property" class="nav-container-elements__Property">Property</a>
+                <a routerLink="/faq" class="nav-container-elements__News">FAQ</a>
+                <a routerLink="/contact" class="nav-container-elements__Contact">Contact</a>
+            </ul>
+
+        </p-sidebar>
+        <p-button (click)="sidebarVisible = true" icon="pi pi-arrow-right"></p-button>
+        <div class="nav-container-elements-box">
+            <ul class="nav-container-elements">
+                <a routerLink="/home" class="nav-container-elements__home">Home</a>
+                <a routerLink="/about" class="nav-container-elements__About">About</a>
+                <a routerLink="/property" class="nav-container-elements__Property">Property</a>
+                <a routerLink="/faq" class="nav-container-elements__News">FAQ</a>
+                <a routerLink="/contact" class="nav-container-elements__Contact">Contact</a>
+            </ul>
+
+            <input type="submit" class="nav-container-elements__addListing" value="Add Listing">
+        </div>
+    </div>
+</nav>

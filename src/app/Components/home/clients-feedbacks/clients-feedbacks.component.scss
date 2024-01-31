@@ -1,0 +1,131 @@
+
+@import "/src/styles/variables.scss";
+
+.feedback-container {
+    background-color: white;
+    margin-top: 70px;
+
+}
+
+.feedback-container-box {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1220px;
+
+}
+.feedback-container-card-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+
+}
+
+.feedback-card {
+    width: 390px;
+    height: 400px;
+    position: relative;
+
+
+    .feedback-card-header {
+        width: inherit;
+        position: relative;
+
+        img {
+            width: 390px;
+        }
+    }
+
+    .feedback-card-footer {
+        background-color: rgb(255, 255, 255);
+        width: 350px;
+        position: absolute;
+        left: 5%;
+        top: 35%;
+        padding: 15px;
+        box-shadow: 10px -5px 34px 1px rgba(0,0,0,0.3);
+        transition: all $animation-time ease-out;
+
+        .feedback-card-footer__description {
+            line-height: 2;
+            font-family: $font-family-subtitle;
+            }
+    }
+
+    .feedback-card-footer:hover{
+        transform: translateY(-100px);
+    }
+}
+
+.feedback-container-title-box{
+    font-family: $font-family-title;
+
+    .feedback-container__subtitle, .feedback-container__title{
+        margin: 0px;
+    }
+    
+    .feedback-container__subtitle{
+        font-size: $font-size-subtitle;
+        color:gray;
+        font-weight: 400;
+    }
+    .feedback-container__title{
+        margin: 10px 0 40px 0;
+        font-size: $font-size-title;
+    }
+}
+.feedback-card-footer-user {
+    display: flex;
+    margin-top: 30px;
+
+    img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+}
+
+.feedback-card-footer-user-info {
+    margin-left: 20px;
+    font-family: $font-family-subtitle;
+}
+
+.feedback-card-footer-user-info__name {
+    margin: 0px;
+    font-weight: 800;
+    font-size: 20px;
+    
+}
+.feedback-card-footer-user-info__job{
+    color:$primary-color;
+    font-weight: 800;
+}
+@media only screen and (max-width:768px) {
+    .feedback-container-title-box{
+
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width:404px) {
+    .feedback-card {
+        width: 290px;
+
+        .feedback-card-header {
+
+            img {
+                width: 290px;
+            }
+        }
+
+        .feedback-card-footer {
+            width: 290px;
+            position: absolute;
+            left: 5%;
+            top: 35%;
+        }
+    }
+}

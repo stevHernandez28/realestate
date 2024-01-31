@@ -1,0 +1,58 @@
+@import "/src/styles/variables.scss";
+
+.container-hero {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  height: 505px;
+}
+
+.container-hero__background{
+    z-index: -1000;
+    object-fit: cover;
+    position: absolute;
+    filter: brightness(50%) contrast(90%) opacity(92%) saturate(110%);
+    width: 100%;
+    height: 100%;
+}
+
+.container-hero-info-box {
+  max-width: 620px;
+  z-index: 1000;
+  margin: auto;
+}
+
+.container-hero__subtitle,
+.container-hero__title {
+  font-family: $font-family-title;
+  text-align: center;
+  font-weight: bold;
+  z-index: 2000000;
+}
+
+.container-hero__subtitle {
+  color: white;
+  position: relative;
+  font-size: $font-size-subtitle;
+  bottom: -40px;
+}
+.container-hero__title {
+  font-size: 64px;
+  font-size: $font-size-bigtitle;
+
+  color: white;
+}
+
+app-search-property {
+  position: absolute;
+  top: 90%;
+}
+
+@media only screen and (max-width:768px)
+{
+  app-search-property{
+    top:80%;
+  }
+}
