@@ -76,6 +76,9 @@ p-button{
     .nav-container-elements-box{
         display: none;
     }
+    .nav-container-elements{
+        flex-direction: column;
+    }
     p-button{
         display: block;
     }

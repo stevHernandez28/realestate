@@ -1,25 +1,28 @@
-
 <app-top-info></app-top-info>
 <nav class="navbar-container">
     <div class="navbar-container-box">
         <div class="navbar-container-logo">
-                <img src="../../../assets/logo.png" alt="logo real estate realstate realestate" class="navbar-container__logo">
+            <img src="../../../assets/logo.png" alt="logo real estate realstate realestate"
+                class="navbar-container__logo">
         </div>
         <p-sidebar [(visible)]="sidebarVisible" position="right">
-            <h3>Sidebar</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
+            <ul class="nav-container-elements">
+                <a routerLink="/home" class="nav-container-elements__home">Home</a>
+                <a routerLink="/about" class="nav-container-elements__About">About</a>
+                <a routerLink="/property" class="nav-container-elements__Property">Property</a>
+                <a routerLink="/faq" class="nav-container-elements__News">FAQ</a>
+                <a routerLink="/contact" class="nav-container-elements__Contact">Contact</a>
+            </ul>
+
         </p-sidebar>
         <p-button (click)="sidebarVisible = true" icon="pi pi-arrow-right"></p-button>
         <div class="nav-container-elements-box">
             <ul class="nav-container-elements">
-                <a href="/" class="nav-container-elements__home">Home</a>
-                <a href="/" class="nav-container-elements__About">About</a>
-                <a href="/" class="nav-container-elements__Property">Property</a>
-                <a href="/" class="nav-container-elements__News">News</a>
-                <a href="/" class="nav-container-elements__Contact">Contact</a>
+                <a routerLink="/home" class="nav-container-elements__home">Home</a>
+                <a routerLink="/about" class="nav-container-elements__About">About</a>
+                <a routerLink="/property" class="nav-container-elements__Property">Property</a>
+                <a routerLink="/faq" class="nav-container-elements__News">FAQ</a>
+                <a routerLink="/contact" class="nav-container-elements__Contact">Contact</a>
             </ul>
 
             <input type="submit" class="nav-container-elements__addListing" value="Add Listing">
