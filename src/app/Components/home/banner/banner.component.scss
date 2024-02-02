@@ -1,8 +1,9 @@
 @import "/src/styles/variables.scss";
 
 .banner-container {
-    margin-top:120px;
     background-color: $secondary-color;
+    padding-top: $padding-section;
+    padding-bottom:$padding-section;
 }
 .banner-container-wrapper{
     display: flex;
