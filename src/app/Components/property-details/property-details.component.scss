@@ -1,13 +1,27 @@
 @import "/src/styles/variables.scss";
 
-.property-container{
+.property-container {
     display: flex;
     padding-top: $padding-section;
     padding-bottom: $padding-section;
     overflow-x: hidden;
     justify-content: center;
+    flex-direction: column;
 }
 
-.property-container-right-box{
-    flex:1;
+.property-container-content {
+    display: flex;
+    margin: auto;
+    max-width: 1220px;
+
+}
+
+.property-container-right-box {
+    flex: 1;
+}
+
+@media only screen and (max-width:768px) {
+    .property-container-content {
+        flex-direction: column;
+    }
 }

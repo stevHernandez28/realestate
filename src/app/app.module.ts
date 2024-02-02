@@ -42,6 +42,8 @@ import { SliderModule } from 'primeng/slider';
 import { AccordionModule } from 'primeng/accordion';
 import { DropdownModule } from 'primeng/dropdown';
 import { CarouselModule } from 'primeng/carousel';
+import { PropertyDetailsContentComponent } from './Components/property-details/property-details-content/property-details-content.component';
+import { PropertyDetailsSideContentComponent } from './Components/property-details/property-details-side-content/property-details-side-content.component';
 
 
 @NgModule({
@@ -73,7 +75,9 @@ import { CarouselModule } from 'primeng/carousel';
     FAQComponent,
     PropertyDetailsComponent,
     TitleComponent,
-    PropertyDetailsCarruselComponent
+    PropertyDetailsCarruselComponent,
+    PropertyDetailsContentComponent,
+    PropertyDetailsSideContentComponent
    ],
   imports: [
     BrowserModule,

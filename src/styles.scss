@@ -1,6 +1,7 @@
 
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
+@import '/src/styles/variables.scss';
 
 .p-carousel .p-carousel-indicators .p-carousel-indicator button{
   background-color: #96031954;
@@ -9,11 +10,11 @@
   border-radius: 100%;
 }
 .p-carousel .p-carousel-indicators .p-carousel-indicator button:hover{
-  background-color: #96031A !important;
+  background-color: $primary-color !important;
 }
 
 .p-carousel .p-carousel-indicators .p-carousel-indicator button:focus{
-  background-color: #96031A !important;
+  background-color: $primary-color !important;
 }
 
 /* Document

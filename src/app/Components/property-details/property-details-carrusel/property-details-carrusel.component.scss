@@ -1,11 +1,21 @@
+@import '/src/styles/variables.scss';
+
 .image-wrapper__house {
     width: 600px;
     height: 500px;
+    transition: all $animation-time ease-in-out;
+    object-fit: cover;
+}
+
+.image-wrapper__house:hover {
+    width: 750px;
+    cursor: pointer;
 }
 
 .card {
     width: 100vw;
     overflow-x: hidden;
+    padding: 0 0 $padding-section 0;
 }
 
 .image-wrapper {
@@ -13,10 +23,3 @@
     text-align: center;
     padding: 3px 5px 3px 5px;
 }
-
-.carousel > *{
-width: 20px !important; 
-background-color: red !important;
-border-radius: 20px !important;
-}
-
