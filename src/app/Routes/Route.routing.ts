@@ -5,6 +5,7 @@ import { AgentDetailsComponent } from "../Components/agent-details/agent-details
 import { ContactMeComponent } from "../Components/contact-me/contact-me.component";
 import { FAQComponent } from "../Components/faq/faq.component";
 import { PropertyComponent } from "../Components/property/property.component";
+import { PropertyDetailsComponent } from "../Components/property-details/property-details.component";
 
 export const routes : Routes=[
     { path: 'home', component: HomeComponent },
@@ -13,6 +14,7 @@ export const routes : Routes=[
     { path: 'agentdetails', component: AgentDetailsComponent },
     { path: 'contact', component: ContactMeComponent },
     { path: 'faq', component: FAQComponent },
+    {path:'property-details', component: PropertyDetailsComponent},
 
     { path: '', redirectTo: '/home', pathMatch: 'full' },
 ]

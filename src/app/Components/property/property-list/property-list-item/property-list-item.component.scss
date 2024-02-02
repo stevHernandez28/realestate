@@ -37,6 +37,11 @@
     gap: 30px;
 
 }
+
+.list-item:hover{
+    cursor: pointer;
+}
+
 .list-item-right-header{
     display: flex;
     justify-content: space-between;
