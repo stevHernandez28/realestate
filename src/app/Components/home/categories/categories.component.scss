@@ -48,7 +48,6 @@
    gap: 35px;
    max-width: 1220px;
 
-
 }
 
 .categories-container-box-gallery > article{
@@ -73,12 +72,19 @@
 article > img{
     filter:brightness(60%);
     transition: all $animation-time ease-in-out;
+    object-fit: cover;
 }
 article > img:hover{
     filter:brightness(80%);
-
+ 
 }
-
+// article{
+//     transition: all $animation-time ease-in-out;
+// }
+// article:hover{
+//     width: 1220px !important;
+//     height: 600px !important;
+// }
 .card-gallery__title{
     color: white;
     margin: 0PX;
@@ -99,14 +105,8 @@ article > img:hover{
     border-radius: 20px;
     padding: 10px;
     background-color: $primary-color;
-
 }
 
-img{
-    width: 900px;
-    object-fit: cover;
-    
-}
 
 .card-gallery__apartments-overlay > p{
     font-family: $font-family-subtitle;
