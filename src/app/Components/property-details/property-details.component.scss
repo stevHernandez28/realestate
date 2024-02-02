@@ -1,0 +1,13 @@
+@import "/src/styles/variables.scss";
+
+.property-container{
+    display: flex;
+    padding-top: $padding-section;
+    padding-bottom: $padding-section;
+    overflow-x: hidden;
+    justify-content: center;
+}
+
+.property-container-right-box{
+    flex:1;
+}
