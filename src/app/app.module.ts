@@ -39,7 +39,8 @@ import { AccordionModule } from 'primeng/accordion';
 import { DropdownModule } from 'primeng/dropdown';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { PropertyDetailsComponent } from './property-details/property-details.component';
+import { PropertyDetailsComponent } from './Components/property-details/property-details.component';
+import { TitleComponent } from './Components/title/title.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { PropertyDetailsComponent } from './property-details/property-details.co
     PropertyListItemComponent,
     ContactMeComponent,
     FAQComponent,
-    PropertyDetailsComponent
+    PropertyDetailsComponent,
+    TitleComponent
    ],
   imports: [
     BrowserModule,
