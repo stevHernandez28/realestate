@@ -60,7 +60,7 @@
     align-items: center;
 }
 
-.card-gallery__apartments-overlay{
+article > div{
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -78,13 +78,15 @@ article > img:hover{
     filter:brightness(80%);
  
 }
-// article{
-//     transition: all $animation-time ease-in-out;
-// }
-// article:hover{
-//     width: 1220px !important;
-//     height: 600px !important;
-// }
+
+article:first-child{
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+article > * p{
+    font-family: $font-family-subtitle;
+}
+
 .card-gallery__title{
     color: white;
     margin: 0PX;
@@ -95,10 +97,6 @@ article > img:hover{
     color: white;
 }
 
-.card-gallery__apartments{
-    grid-row: 1/2;
-    grid-column: 1/3;
-}
 
 .card-gallery__listing{
     color:white;
@@ -108,10 +106,6 @@ article > img:hover{
 }
 
 
-.card-gallery__apartments-overlay > p{
-    font-family: $font-family-subtitle;
-}
-
 
 
 @media only screen and (max-width:1024px) {
@@ -119,12 +113,14 @@ article > img:hover{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(4,1fr);
     }
-    .card-gallery__apartments{
-        grid-row: 1/1;
-        grid-column: 1/1;
-    }
+
     .categories-container-box-gallery > article{
         margin: 0 10px 0 10px;
+    }
+
+    article:first-child{
+        grid-row: 1/1;
+        grid-column: 1/1;
     }
 }
 
