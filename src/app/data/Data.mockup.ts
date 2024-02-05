@@ -1,4 +1,4 @@
-import { CategoryImages } from "../interface/interfaces";
+import { CategoryImages, PropertyDetails } from "../interface/interfaces";
 
 export const images : CategoryImages[] = [
     {
@@ -43,3 +43,16 @@ export const images : CategoryImages[] = [
     },
   ]
 
+
+  export const propertyDetails : PropertyDetails = {
+    'Property ID': 'HZ29',
+    'Home Area': '120 sqft',
+    'Rooms': 7,
+    'Baths': 2,
+    'Year built': 1992,
+    'Lot Area': 'HZ29',
+    'Lot dimensions': '120 sqft',
+    'Beds': 7,
+    'Price': 2,
+    'Property Status': 'For Sale'
+  };

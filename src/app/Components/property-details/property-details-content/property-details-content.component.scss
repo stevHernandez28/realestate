@@ -81,4 +81,17 @@
     .body__description{
         line-height: 2;
     }
+
 }
+.property-details-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .property-details-table {
+    border-collapse: collapse;
+    td {
+      padding: 0.5rem;
+      text-align: left;
+    }
+  }
