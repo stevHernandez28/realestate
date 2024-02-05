@@ -13,7 +13,7 @@ export class PropertyDetailsContentComponent implements OnInit {
   propertyDetails : PropertyDetails = propertyDetails;
   amenities : Amenities[] = amenities;
 
-  
+
   detailsColumnOne: any = {};
   detailsColumnTwo: any = {};
   
@@ -24,7 +24,6 @@ export class PropertyDetailsContentComponent implements OnInit {
   onResize(event: Event) {
     this.checkWindowSize();
   }
-
 
   ngOnInit(): void {
     this.checkWindowSize();

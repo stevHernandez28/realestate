@@ -40,14 +40,14 @@
                 <table class="property-details-table">
                     <tr *ngFor="let key of objectKeys(detailsColumnOne)">
                         <td class="details-table__title">{{ key }}:</td>
-                        <td  class="details-table__subtitle">{{ detailsColumnOne[key] }}</td>
+                        <td class="details-table__subtitle">{{ detailsColumnOne[key] }}</td>
                     </tr>
                 </table>
                 <p-divider [layout]="layout"></p-divider>
                 <table class="property-details-table">
                     <tr *ngFor="let key of objectKeys(detailsColumnTwo)">
-                        <td  class="details-table__title">{{ key }}:</td>
-                        <td  class="details-table__subtitle">{{ detailsColumnTwo[key] }}</td>
+                        <td class="details-table__title">{{ key }}:</td>
+                        <td class="details-table__subtitle">{{ detailsColumnTwo[key] }}</td>
                     </tr>
                 </table>
             </div>
@@ -56,9 +56,9 @@
         <div class="content-container-body-description">
             <h3 class="body__title">From Our Gallery</h3>
             <div class="body__gallery">
-                    <img src="./assets/image.jpeg" alt="">      
-                    <img src="./assets/image.jpeg" alt="">      
-                    <img src="./assets/image.jpeg" alt="">      
+                <img src="./assets/image.jpeg" alt="">
+                <img src="./assets/image.jpeg" alt="">
+                <img src="./assets/image.jpeg" alt="">
             </div>
         </div>
 
@@ -67,15 +67,30 @@
             <h3 class="body__title">Amenities</h3>
             <div class="amenities-container">
                 <div *ngFor="let column of getAmenitiesColumns(amenities[0].amenities)" class="amenities-column">
-                  <div *ngFor="let amenity of column" class="amenity-item">
-                    <img src="./assets/icon/square-check-solid.svg" alt="" srcset=""> {{ amenity }}
-                  </div>
+                    <div *ngFor="let amenity of column" class="amenity-item">
+                        <img src="./assets/icon/square-check-solid.svg" alt="" srcset=""> {{ amenity }}
+                    </div>
                 </div>
-              </div>
-              
+            </div>
+        </div>
+
+        <div class="content-container-body-description">
+            <h3 class="body__title">Location</h3>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe loading="async" class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0"
+                        marginwidth="0"
+                        src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=calle la rosa&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed&amp;loading=async"></iframe><a
+                        href="https://embed-googlemap.com">google maps embed</a>
+                </div>
+          
+            </div>
         </div>
     </body>
     <footer class="content-container-footer">
 
     </footer>
 </section>
+
+
+        
