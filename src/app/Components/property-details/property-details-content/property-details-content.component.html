@@ -36,23 +36,21 @@
         </div>
         <div class="content-container-body-description">
             <h3 class="body__title">Property Detail</h3>
-            <!-- <table class="body__table">
-                tr.
-            </table> -->
             <div class="property-details-container">
                 <table class="property-details-table">
-                  <tr *ngFor="let key of objectKeys(detailsColumnOne)">
-                    <td>{{ key }}:</td>
-                    <td>{{ detailsColumnOne[key] }}</td>
-                  </tr>
+                    <tr *ngFor="let key of objectKeys(detailsColumnOne)">
+                        <td class="details-table__title">{{ key }}:</td>
+                        <td  class="details-table__subtitle">{{ detailsColumnOne[key] }}</td>
+                    </tr>
                 </table>
+                <p-divider layout="vertical"></p-divider>
                 <table class="property-details-table">
-                  <tr *ngFor="let key of objectKeys(detailsColumnTwo)">
-                    <td>{{ key }}:</td>
-                    <td>{{ detailsColumnTwo[key] }}</td>
-                  </tr>
+                    <tr *ngFor="let key of objectKeys(detailsColumnTwo)">
+                        <td  class="details-table__title">{{ key }}:</td>
+                        <td  class="details-table__subtitle">{{ detailsColumnTwo[key] }}</td>
+                    </tr>
                 </table>
-              </div>
+            </div>
         </div>
 
     </body>

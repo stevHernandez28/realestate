@@ -19,7 +19,11 @@ export class PropertyDetailsContentComponent implements OnInit {
     const middle = Math.ceil(keys.length / 2);
 
     keys.slice(0, middle).forEach((key) => {
-      this.detailsColumnOne[key] =  this.propertyDetails[key];
+      if(this.propertyDetails[key]!== '')
+      {
+        this.detailsColumnOne[key] =  this.propertyDetails[key];
+      }
+    
     });
 
     keys.slice(middle).forEach((key) => {

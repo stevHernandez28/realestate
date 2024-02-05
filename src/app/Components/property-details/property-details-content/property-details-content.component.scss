@@ -85,13 +85,26 @@
 }
 .property-details-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    background-color: $detail-color;
+    padding: 40px;
+
   }
   
   .property-details-table {
     border-collapse: collapse;
     td {
-      padding: 0.5rem;
+      padding: 1rem;
       text-align: left;
+      font-family: $font-family-subtitle;
     }
+  }
+
+  .details-table__title{
+    font-weight: 400;
+  }
+
+  .details-table__subtitle{
+    font-weight: 500;
+
   }
