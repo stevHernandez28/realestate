@@ -43,7 +43,7 @@
                         <td  class="details-table__subtitle">{{ detailsColumnOne[key] }}</td>
                     </tr>
                 </table>
-                <p-divider layout="vertical"></p-divider>
+                <p-divider [layout]="layout"></p-divider>
                 <table class="property-details-table">
                     <tr *ngFor="let key of objectKeys(detailsColumnTwo)">
                         <td  class="details-table__title">{{ key }}:</td>
@@ -53,6 +53,27 @@
             </div>
         </div>
 
+        <div class="content-container-body-description">
+            <h3 class="body__title">From Our Gallery</h3>
+            <div class="body__gallery">
+                    <img src="./assets/image.jpeg" alt="">      
+                    <img src="./assets/image.jpeg" alt="">      
+                    <img src="./assets/image.jpeg" alt="">      
+            </div>
+        </div>
+
+
+        <div class="content-container-body-description">
+            <h3 class="body__title">Amenities</h3>
+            <div class="amenities-container">
+                <div *ngFor="let column of getAmenitiesColumns(amenities[0].amenities)" class="amenities-column">
+                  <div *ngFor="let amenity of column" class="amenity-item">
+                    <img src="./assets/icon/square-check-solid.svg" alt="" srcset=""> {{ amenity }}
+                  </div>
+                </div>
+              </div>
+              
+        </div>
     </body>
     <footer class="content-container-footer">
 

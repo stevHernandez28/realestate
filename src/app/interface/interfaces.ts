@@ -22,3 +22,7 @@ export interface PropertyDetails {
   
   }
   
+export interface Amenities {
+    id:number;
+    amenities: Array<string>;
+  }

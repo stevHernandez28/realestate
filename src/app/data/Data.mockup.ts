@@ -1,4 +1,4 @@
-import { CategoryImages, PropertyDetails } from "../interface/interfaces";
+import { Amenities, CategoryImages, PropertyDetails } from "../interface/interfaces";
 
 export const images : CategoryImages[] = [
     {
@@ -56,3 +56,10 @@ export const images : CategoryImages[] = [
     'Price': 2,
     'Property Status': 'For Sale'
   };
+
+export const amenities : Amenities[] = [
+    {
+      id: 1,
+      amenities: ['gym', 'microwave', 'wifi', 'Refrigerator', 'Window Coverings', 'Washer', 'Air Conditioning', 'Barbeque', 'Recreation', 'Swimming Pool', 'Basketball Court', 'Fireplace', 'Indoor Game', '24x7 Security']
+    }
+  ];
