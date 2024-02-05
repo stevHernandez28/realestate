@@ -72,9 +72,48 @@ p-button{
 }
 
 
+.hamburger-slim {
+    background: transparent;
+    display: none;
+    position: relative;
+    height: 30px;
+    width: 50px;
+    outline: none;
+    border: none;
+    &:before,
+    &:after {
+      background: $primary-color;
+      backface-visibility: hidden;
+      content: "";
+      height: 2px;
+      left: 0;
+      transition: 0.75s;
+      width: 50px;
+    }
+  
+    &:before {
+      box-shadow:$primary-color 0 14px 0 0;
+      position: absolute;
+      top: 0;
+    }
+  
+    &:after {
+      position: absolute;
+      top: calc(100% - 2px);
+    }
+  }
 @media only screen and (max-width:768px) {
     .nav-container-elements-box{
         display: none;
+    }
+
+    .navbar-container-box{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hamburger-slim{
+        margin-right: 8%;
+        display: block;
     }
     .nav-container-elements{
         flex-direction: column;
