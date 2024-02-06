@@ -33,6 +33,10 @@ import { FAQComponent } from './Components/faq/faq.component';
 import { PropertyDetailsComponent } from './Components/property-details/property-details.component';
 import { TitleComponent } from './Components/title/title.component';
 import { PropertyDetailsCarruselComponent } from './Components/property-details/property-details-carrusel/property-details-carrusel.component';
+import { PropertyDetailsContentComponent } from './Components/property-details/property-details-content/property-details-content.component';
+import { PropertyDetailsSideContentComponent } from './Components/property-details/property-details-side-content/property-details-side-content.component';
+import { CategoriesLocationComponent } from './Components/home/categories-location/categories-location.component';
+
 
 
 import { DividerModule } from 'primeng/divider';
@@ -42,9 +46,6 @@ import { SliderModule } from 'primeng/slider';
 import { AccordionModule } from 'primeng/accordion';
 import { DropdownModule } from 'primeng/dropdown';
 import { CarouselModule } from 'primeng/carousel';
-import { PropertyDetailsContentComponent } from './Components/property-details/property-details-content/property-details-content.component';
-import { PropertyDetailsSideContentComponent } from './Components/property-details/property-details-side-content/property-details-side-content.component';
-
 
 @NgModule({
   declarations: [
@@ -77,7 +78,8 @@ import { PropertyDetailsSideContentComponent } from './Components/property-detai
     TitleComponent,
     PropertyDetailsCarruselComponent,
     PropertyDetailsContentComponent,
-    PropertyDetailsSideContentComponent
+    PropertyDetailsSideContentComponent,
+    CategoriesLocationComponent
    ],
   imports: [
     BrowserModule,
