@@ -1,0 +1,34 @@
+@import "/src/styles/variables.scss";
+
+.categories-location-container {
+  background-color : white;
+  padding-bottom: $padding-section;
+  .categories-location-container-title-cards-box {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+
+.categories-location-container-title-box {
+  
+  .categories-location-container__subtitle,
+  .categories-location-container__title {
+    color: black;
+
+    font-family: $font-family-title;
+
+    text-align: center;
+  }
+  .categories-location-container__title {
+    font-size: $font-size-title;
+    margin: 0px;
+  }
+  .categories-location-container__subtitle {
+    margin: 0px;
+    font-size: $font-size-subtitle;
+    font-weight: 400;
+    color:gray;
+  }
+
+}
