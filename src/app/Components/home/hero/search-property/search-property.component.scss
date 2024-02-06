@@ -32,8 +32,34 @@
 .container-searchProperty__find:hover {
     background-color: $primary-color-pressed;
 }
-
 @media only screen and (max-width:768px) {
+    .container-searchProperty-box {
+        flex-direction: column;
+        width: 300px;
+        height: 400px;
+    }
+
+    .container-searchProperty-filters {
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-searchProperty-action{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-searchProperty__find{
+        margin: 0px;
+        margin-left: 0px;
+
+    }
+
+}
+@media only screen and (max-width:375px) {
 
     .container-searchProperty-box {
         flex-direction: column;

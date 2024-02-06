@@ -3,8 +3,10 @@
   <div class="container-hero-info-box">
     <h1 [appFadeInAnimation]="1" #subtitle class="container-hero__subtitle">Real Estate Agency</h1>
 
-    <h3 [appFadeInAnimation]="1"  class="container-hero__title">FIND YOUR DREAM HOUSE BY US<span>.</span></h3>
+    <h3 [appFadeInAnimation]="1" class="container-hero__title" #heroTitle>EMBRACE EXCLUSIVE LIVING WITH US <span
+        appChangeTextAnimation [textArray]="[ 'ON THE BEACH.', 'IN THE CITY.', 'AMONGST NATURE.']"
+        [animationDuration]="1">ON THE BEACH</span>
+    </h3>
   </div>
-
   <app-search-property></app-search-property>
 </div>

@@ -47,6 +47,7 @@ import { AccordionModule } from 'primeng/accordion';
 import { DropdownModule } from 'primeng/dropdown';
 import { CarouselModule } from 'primeng/carousel';
 import { FadeInAnimationDirective } from './directive/fade-in-animation.directive';
+import { ChangeTextAnimationDirective } from './directive/change-text-animation.directive';
 
 @NgModule({
   declarations: [
@@ -81,7 +82,8 @@ import { FadeInAnimationDirective } from './directive/fade-in-animation.directiv
     PropertyDetailsContentComponent,
     PropertyDetailsSideContentComponent,
     CategoriesLocationComponent,
-    FadeInAnimationDirective
+    FadeInAnimationDirective,
+    ChangeTextAnimationDirective
    ],
   imports: [
     BrowserModule,
