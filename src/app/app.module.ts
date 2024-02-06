@@ -48,6 +48,7 @@ import { DropdownModule } from 'primeng/dropdown';
 import { CarouselModule } from 'primeng/carousel';
 import { FadeInAnimationDirective } from './directive/fade-in-animation.directive';
 import { ChangeTextAnimationDirective } from './directive/change-text-animation.directive';
+import { ParallaxDirective } from './directive/parallax.directive';
 
 @NgModule({
   declarations: [
@@ -83,7 +84,8 @@ import { ChangeTextAnimationDirective } from './directive/change-text-animation.
     PropertyDetailsSideContentComponent,
     CategoriesLocationComponent,
     FadeInAnimationDirective,
-    ChangeTextAnimationDirective
+    ChangeTextAnimationDirective,
+    ParallaxDirective
    ],
   imports: [
     BrowserModule,
