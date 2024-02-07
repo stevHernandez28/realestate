@@ -1,0 +1,20 @@
+<section class="categories-container">
+    <div class="categories-container-box">
+        <div class="categories-container-box-title">
+            <p class="categories-container__subtitle ">Property</p>
+            <p class="categories-container__title ">Property By Categories</p>
+        </div>
+    <section class="slides">
+        <ul class="list">
+            <li *ngFor="let slide of slides" class="slide" appParallax>
+                <div class="background" [style.backgroundImage]="'url('+ slide.url + ')'">
+                </div>
+                <div class="content">
+                    {{ slide.content }}
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    </div>
+</section>

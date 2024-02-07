@@ -36,6 +36,7 @@ import { PropertyDetailsCarruselComponent } from './Components/property-details/
 import { PropertyDetailsContentComponent } from './Components/property-details/property-details-content/property-details-content.component';
 import { PropertyDetailsSideContentComponent } from './Components/property-details/property-details-side-content/property-details-side-content.component';
 import { CategoriesLocationComponent } from './Components/home/categories-location/categories-location.component';
+import { SlidesComponent } from './Components/home/slides/slides.component';
 
 
 
@@ -85,7 +86,8 @@ import { ParallaxDirective } from './directive/parallax.directive';
     CategoriesLocationComponent,
     FadeInAnimationDirective,
     ChangeTextAnimationDirective,
-    ParallaxDirective
+    ParallaxDirective,
+    SlidesComponent
    ],
   imports: [
     BrowserModule,

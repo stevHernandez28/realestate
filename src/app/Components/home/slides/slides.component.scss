@@ -1,0 +1,115 @@
+@import '/src/styles/variables.scss';
+
+.ends {
+    min-height: 50vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .categories-container{
+    background-color: white;
+    margin-top: 120px;
+    display: flex;
+    padding-top: $padding-section;
+    padding-bottom: $padding-section;
+    .categories-container-box{
+        margin: auto;
+    }
+}
+
+.categories-container-box-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .categories-container__title, .categories-container__subtitle{
+        text-align: center;
+        font-family: $font-family-title;
+        font-weight: bold;
+    }
+
+    .categories-container__subtitle{
+        position: relative;
+        font-size: $font-size-subtitle;
+        color:gray;
+        font-weight: 400;
+        bottom:-30px;
+
+
+    }
+    .categories-container__title{
+        font-size: 32px;
+        font-size: $font-size-title;
+        margin: 10px 0 40px 0;
+        font-weight: bold;
+    }
+
+}
+  .slides {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  .slides .list {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .slides .slide {
+    display: flex;
+    width: 90vw;
+    height: 100vh;
+    max-height: 1280px;
+    position: relative;
+    overflow: hidden;
+  }
+  .slide .background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 90vw;
+    height: 100vh;
+    background-position: center;
+    will-change: transform;
+    background-size: cover;
+  }
+  
+  .slide .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    padding: 3rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 40rem;
+    position: relative;
+    align-items: center;
+    font-family: $font-family-title;
+    color: $text-color  ;
+    text-transform: uppercase;
+    font-size: $font-size-bigtitle;
+    line-height: 1.25em;
+    font-weight: 500;
+  }
+
+
+  @media only screen and (max-width:768px) {
+    .categories-container{
+        margin-top: 350px;
+    }
+}
