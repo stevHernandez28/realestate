@@ -6,14 +6,14 @@
         </div>
     <section class="slides">
         <ul class="list">
-            <li *ngFor="let slide of slides" class="slide" appParallax>
+            <li *ngFor="let slide of slides" class="slide" appParallax routerLink="/property" >
                 <div class="background" [style.backgroundImage]="'url('+ slide.url + ')'">
                 </div>
                 <div class="content">
-                    {{ slide.content }}
+                    {{ slide.content }} <span>.</span>
                 </div>
             </li>
-        </ul>
+    </ul>
     </section>
 
     </div>

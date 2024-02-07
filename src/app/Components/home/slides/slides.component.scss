@@ -24,8 +24,7 @@
 .categories-container-box-title{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
+  
     .categories-container__title, .categories-container__subtitle{
         text-align: center;
         font-family: $font-family-title;
@@ -71,7 +70,13 @@
     max-height: 1280px;
     position: relative;
     overflow: hidden;
+  
+    :hover{
+      cursor:pointer;
+    }
   }
+
+  
   .slide .background {
     display: flex;
     align-items: center;
@@ -87,29 +92,51 @@
   }
   
   .slide .content {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    display: flex;
     text-align: center;
     padding: 3rem;
     margin: 0 auto;
     box-sizing: border-box;
-    max-width: 40rem;
+    max-width: 100rem;
     position: relative;
     align-items: center;
     font-family: $font-family-title;
     color: $text-color  ;
     text-transform: uppercase;
-    font-size: $font-size-bigtitle;
+    font-size: calc($font-size-bigtitle * 3);
     line-height: 1.25em;
     font-weight: 500;
-  }
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+  0px -4px 10px rgba(0, 0, 0, 0.3);
+  
 
+    span{
+      color: $primary-color;
+    }
+   }
+
+@media only screen and (max-width:1420px)
+{
+  
+  .slide .content{
+    font-size: calc($font-size-bigtitle * 2);
+  }
+}
 
   @media only screen and (max-width:768px) {
     .categories-container{
         margin-top: 350px;
+    }
+
+    .slide .content{
+      font-size: calc($font-size-bigtitle );
+    }
+
+    .slides .slide{
+      height: 700px;
     }
 }

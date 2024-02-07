@@ -39,9 +39,9 @@ export class ParallaxDirective implements AfterViewInit  {
       ease: "none"
     });
     tl.fromTo(content, {
-      y: () => window.innerHeight * -getRatio(slide) * 2
+      y: () => window.innerHeight * -getRatio(slide) * 2.5
     }, {
-      y: () => window.innerHeight * getRatio(slide) * 2,
+      y: () => window.innerHeight * getRatio(slide) * 2.5,
       ease: "none"
     }, 0);
   }
