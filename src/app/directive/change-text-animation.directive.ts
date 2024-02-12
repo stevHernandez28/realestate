@@ -44,6 +44,7 @@ export class ChangeTextAnimationDirective implements OnInit, OnDestroy {
         gsap.to(this.el.nativeElement, {
           duration: this.animationDuration,
           opacity: 1      ,
+          background:'#b3001b',
             ease: 'power4.out'
         });
       }
