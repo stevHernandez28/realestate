@@ -1,8 +1,9 @@
 @import "/src/styles/variables.scss";
 
 .categories-location-container {
-  background-color : white;
+  background-color: white;
   padding-bottom: $padding-section;
+
   .categories-location-container-title-cards-box {
     display: flex;
     flex-direction: column;
@@ -11,53 +12,65 @@
 }
 
 .categories-location-container-title-box {
-  
+
   .categories-location-container__subtitle,
   .categories-location-container__title {
     color: black;
     font-family: $font-family-title;
     text-align: center;
   }
+
   .categories-location-container__title {
     font-size: $font-size-title;
     margin: 0px;
+
   }
+
   .categories-location-container__subtitle {
     margin: 0px;
-    font-size:$font-size-subtitle;
+    font-size: $font-size-subtitle;
     font-weight: 400;
-    color:gray;
+    color: gray;
   }
 
 }
 
-.categories-location-container-box{
+.categories-location-container-box {
   display: flex;
   max-height: 1280px;
-  height:700px;
+  height: 700px;
   width: 100%;
-  .location-sosua-left-box{
+  .location-sosua-left-box {
     width: 100%;
     height: 100%;
     padding: 0px 90px 0 90px;
-    
-    .location-sosua-left-box__title{
+
+    .location-sosua-left-box__title {
       text-transform: uppercase;
       text-align: start;
       font-family: $font-family-title;
-      font-size: calc( $font-size-title - 9px);
+      font-size: calc($font-size-title - 9px);
       margin: 0px;
       margin-top: 90px;
-     }
 
-     .location-sosua-left-box__list{
-      list-style: none;
+      span {
+        color: $primary-color;
+      }
+    }
+
+    .location-sosua-left-box__list {
       padding: 0px;
-      gap: 90px;
-     }
+
+      .location-sosua-left-box__item {
+        margin-bottom: 20px;
+        margin-left: 20px;
+        font-family: $font-family-subtitle;
+        font-size: $font-size-parragraph;
+      }
+    }
   }
-  
-  .location-sosua-right-box{
+
+  .location-sosua-right-box {
     width: 100%;
     height: 100%;
   }
@@ -65,7 +78,7 @@
 
 
 .list {
- padding: 0px;
+  padding: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,8 +95,8 @@
   position: relative;
   overflow: hidden;
 
-  :hover{
-    cursor:pointer;
+  :hover {
+    cursor: pointer;
   }
 }
 
@@ -116,16 +129,16 @@
   position: relative;
   align-items: center;
   font-family: $font-family-title;
-  color: $text-color  ;
+  color: $text-color ;
   text-transform: uppercase;
   font-size: calc($font-size-bigtitle * 3);
   line-height: 1.25em;
   font-weight: 500;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
-0px -4px 10px rgba(0, 0, 0, 0.3);
+    0px -4px 10px rgba(0, 0, 0, 0.3);
 
 
-  span{
+  span {
     color: $primary-color;
   }
- }
+}

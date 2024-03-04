@@ -7,20 +7,20 @@
     overflow: hidden;
 
 }
-
 .list-item-left__property{
     width: 300px;
-    height: 270px;
+    height: inherit;
     transition: all .3s ease-in-out;
 }
 
 .list-item-left__property:hover{
     width: 350px;
-    height: 320px;
+    height: 400px;
 }
 
 
 .list-item-right{
+    padding: 30px;
     flex:1;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,6 @@
 }
 
 .list-item{
-    padding: 30px;
     box-shadow: 24px 24px 66px #e8e8e8,
     -24px -24px 66px #ffffff;    
     display: flex;
