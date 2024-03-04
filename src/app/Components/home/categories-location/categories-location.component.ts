@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./categories-location.component.scss']
 })
 export class CategoriesLocationComponent {
-
+ slides=[ { id: 1, content: 'HOUSE', url:'./assets/gallery/hom3.jpg' },
+];
 }

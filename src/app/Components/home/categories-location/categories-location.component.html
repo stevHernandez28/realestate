@@ -2,15 +2,33 @@
     <div class="categories-location-container-title-cards-box">
 
         <div class="categories-location-container-title-box">
-            <h4 class="categories-location-container__subtitle">Property</h4>
-            <h1 class="categories-location-container__title">Property By Location</h1>
+            <h4 class="categories-location-container__subtitle">Property By</h4>
+            <h1 class="categories-location-container__title">Location</h1>
         </div>
 
         <div class="categories-location-container-box">
             <div class="location-sosua-left-box">
-                <h3 class="location-sosua-left-box-title">Sosua</h3>
+                <h3 class="location-sosua-left-box__title">Sosua</h3>
+
+                <ul class="location-sosua-left-box__list">
+                    <li class="location-sosua-left-box__item">Lorem ipsum dolor sit.</li>
+                    <li class="location-sosua-left-box__item">Lorem ipsum dolor sit.</li>
+                    <li class="location-sosua-left-box__item">Lorem ipsum dolor sit.</li>
+                    <li class="location-sosua-left-box__item">Lorem ipsum dolor sit.</li>
+                    <li class="location-sosua-left-box__item">Lorem ipsum dolor sit.</li>
+                </ul>
             </div>
-            <div class="location-sosua-right-box"></div>
+            <div class="location-sosua-right-box">
+                
+                 <ul class="list">
+                    <li *ngFor="let slide of slides" class="slide" appParallax routerLink="/property" >
+                        <div class="background" [style.backgroundImage]="'url('+ slide.url + ')'">
+                        </div>
+                    </li>
+                </ul> 
+            
+            
+            </div>
         </div>
     </div>
 </section>
