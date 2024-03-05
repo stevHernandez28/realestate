@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { PropertyListItem} from 'src/app/interface/interfaces';
 
 @Component({
   selector: 'app-property-list-item',
@@ -7,21 +8,26 @@ import { Component } from '@angular/core';
 })
 export class PropertyListItemComponent {
 
-    data = [{
-        header:{
-          image:'./assets/house.jpg',
-          title:'FOR RENT',
-          price:'$34,900',
-          priceRate: 'Month'
-        },
-        body:{
-          title:'New Apartment Nice View',
-          address: 'Belmont Gardens, Chicago',
-          details: '3 Bed &nbsp; 2 Bath &nbsp; 3450 Square Ft'
-        },
-        footer:{
-          autor: './assets/author.jpg',
-          agentName : ''
-        }
-    }]
+  @Input()
+  PropertyList : PropertyListItem = {
+    id: 1,
+    header: {
+      image: '',
+      title: '',
+      price: '',
+      priceRate: ''
+    },
+    body: {
+      title: '',
+      address: '',
+      details: '',
+    },
+    footer: {
+      autor: '',
+      agentName: '',
+      agentOcupation: ''
+    }
+  }
+
+
 }

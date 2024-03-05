@@ -1,30 +1,28 @@
-<article routerLink="/property-details" class="list-item">
+<article [routerLink]="'/property-details/'+PropertyList.id" class="list-item">
     <div class="list-item-left">
-        <img src="./assets/house.jpg" alt="house property sale real estate"
+        <img [src]="PropertyList.header.image" alt="house property sale real estate"
             class="list-item-left__property">
     </div>
 
     <div class="list-item-right">
         <header class="list-item-right-header">
-            <p class="header__title">FOR RENT</p>
-            <p class="header__price">$34,900 <span>/Month</span></p>
+            <p class="header__title">{{PropertyList.header.title}}</p>
+            <p class="header__price">{{PropertyList.header.price}} <span>/{{PropertyList.header.priceRate}}</span></p>
         </header>
-
         <body class="list-item-right-body">
-            <p class="body__title">New Apartment Nice View</p>
-            <p class="body__address">Belmont Gardens, Chicago</p>
-            <p class="body__details">3 Bed &nbsp; 2 Bath &nbsp; 3450 Square Ft</p>
+            <p class="body__title">{{PropertyList.body.title}}</p>
+            <p class="body__address">{{PropertyList.body.address}}</p>
+            <p class="body__details">{{PropertyList.body.details}}</p>
         </body>
         <footer class="list-item-right-footer">
             <div class="footer-agent-box">
-                <img src="./assets/author.jpg"
+                <img [src]="PropertyList.footer.autor"
                     alt="autor agent sale person salesperson" class="footer__profile">
                     <div class="footer-agent-information">
-                        <p class="footer-agent-information__name">William Seklo</p>
-                        <p class="footer-agent-information__ocupation">Estate Agents</p>
+                        <p class="footer-agent-information__name">{{PropertyList.footer.agentName}}</p>
+                        <p class="footer-agent-information__ocupation">{{PropertyList.footer.agentOcupation}}</p>
                     </div>    
                 </div>
-
                 <div class="footer-agent__button"></div>
         </footer>
 
