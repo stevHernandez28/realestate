@@ -14,7 +14,6 @@ export const routes : Routes=[
     { path: 'agentdetails', component: AgentDetailsComponent },
     { path: 'contact', component: ContactMeComponent },
     { path: 'faq', component: FAQComponent },
-    {path:'property-details', component: PropertyDetailsComponent},
-
+    {path:'property-details/:id', component: PropertyDetailsComponent},
     { path: '', redirectTo: '/home', pathMatch: 'full' },
 ]

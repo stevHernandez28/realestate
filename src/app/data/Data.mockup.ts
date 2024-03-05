@@ -1,24 +1,45 @@
 import { Amenities, CategoryImages, PropertyDetails, PropertyListItem } from "../interface/interfaces";
 
-export const data : PropertyListItem[]  = [{
+export const dataPropertyList : PropertyListItem[]  = [{
   id:1,
   header: {
     image: './assets/house.jpg',
     title: 'FOR RENT',
     price: '$34,900',
-    priceRate: 'Month'
+    priceRate: '/Month'
   },
   body: {
     title: 'New Apartment Nice View',
     address: 'Belmont Gardens, Chicago',
-    details: '3 Bed &nbsp; 2 Bath &nbsp; 3450 Square Ft'
+    details: '3 Bed  2 Bath 3450 Square Ft'
   },
   footer: {
     autor: './assets/author.jpg',
     agentName: 'William Seklo',
     agentOcupation: 'Estate Agents'
   }
-}]
+},
+{
+  id:2,
+  header: {
+    image: './assets/house.jpg',
+    title: 'FOR SELL',
+    price: '$14,900',
+    priceRate: ''
+  },
+  body: {
+
+    title: 'New Apartment Nice View',
+    address: 'Belmont Gardens, Chicago',
+    details: '3 Bed  2 Bath 3450 Square Ft'
+  },
+  footer: {
+    autor: './assets/author.jpg',
+    agentName: 'William Seklo',
+    agentOcupation: 'Estate Agents'
+  }
+},
+]
 
 export const images: CategoryImages[] = [
   {
