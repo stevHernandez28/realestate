@@ -1,9 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { image } from 'src/app/interface/interfaces';
 
 
-interface images {
-  url: string;
-}
 @Component({
   selector: 'app-property-details-carrusel',
   templateUrl: './property-details-carrusel.component.html',
@@ -12,28 +10,8 @@ interface images {
 
 export class PropertyDetailsCarruselComponent implements OnInit {
 
-  images: images[] = [
-    {
-      url: './assets/image.jpeg'
-
-    },
-
-    {
-      url: './assets/image.jpeg'
-
-    },
-
-    {
-      url: './assets/image.jpeg'
-
-    },
-
-    {
-      url: './assets/image.jpeg'
-
-    },
-
-  ]
+  @Input()
+  images: image[] = [];
 
   responsiveOptions: any[] | undefined;
 

@@ -27,9 +27,13 @@ interface PropertyListFooter {
 
 export interface PropertyListItem {
   id: number;
+  guid: string;
   header: PropertyListHeader;
   body: PropertyListBody;
   footer: PropertyListFooter;
+}
+export interface image {
+  url: string;
 }
 
 export interface PropertyDetails {

@@ -11,6 +11,7 @@ export class PropertyListItemComponent {
   @Input()
   PropertyList : PropertyListItem = {
     id: 1,
+    guid: '',
     header: {
       image: '',
       title: '',

@@ -1,7 +1,8 @@
 import { Amenities, CategoryImages, PropertyDetails, PropertyListItem } from "../interface/interfaces";
 
-export const dataPropertyList : PropertyListItem[]  = [{
-  id:1,
+export const dataPropertyList: PropertyListItem[] = [{
+  id: 1,
+  guid: '0140-1203-3012-3102-fad-d1',
   header: {
     image: './assets/house.jpg',
     title: 'FOR RENT',
@@ -20,7 +21,8 @@ export const dataPropertyList : PropertyListItem[]  = [{
   }
 },
 {
-  id:2,
+  id: 2,
+  guid: '0140-1203-3012-3102-fad-d1',
   header: {
     image: './assets/house.jpg',
     title: 'FOR SELL',
