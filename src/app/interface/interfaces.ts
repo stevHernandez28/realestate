@@ -36,6 +36,21 @@ export interface image {
   url: string;
 }
 
+export interface propertyDetailsContentHeader{
+  title: string;
+  statustitle: string;
+  statussubtitle: string;
+  publishDate : string;
+  comments: number;
+  location : string;
+}
+export interface propertyDetailsContentBody{
+  description: string;
+  propertyDetails: PropertyDetails;
+  amenities: string[];
+  gallery: string[];
+  location: string;
+}
 export interface PropertyDetails {
   [key: string]: string | number;
   'Property ID': string;
@@ -48,10 +63,11 @@ export interface PropertyDetails {
   'Beds': number;
   'Price': number;
   'Property Status': string;
-
+  
 }
-
-export interface Amenities {
+export interface propertyDetailsContent{
   id: number;
-  amenities: Array<string>;
-}
+  guid:string;
+  header: propertyDetailsContentHeader;
+  body: propertyDetailsContentBody;
+}1

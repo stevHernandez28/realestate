@@ -1,8 +1,5 @@
-import { Component, OnInit, HostListener } from '@angular/core';
-import { amenities, propertyDetails } from 'src/app/data/Data.mockup';
-import { Amenities, PropertyDetails } from 'src/app/interface/interfaces';
-
-
+import { Component, OnInit, HostListener, Input } from '@angular/core';
+import { propertyDetailsContent  } from 'src/app/interface/interfaces';
 @Component({
   selector: 'app-property-details-content',
   templateUrl: './property-details-content.component.html',
@@ -10,10 +7,10 @@ import { Amenities, PropertyDetails } from 'src/app/interface/interfaces';
 })
 export class PropertyDetailsContentComponent implements OnInit {
 
-  propertyDetails : PropertyDetails = propertyDetails;
-  amenities : Amenities[] = amenities;
+  @Input() propertyDetailsContent!: propertyDetailsContent;
 
-
+  details! : string[];
+  
   detailsColumnOne: any = {};
   detailsColumnTwo: any = {};
   
@@ -27,20 +24,22 @@ export class PropertyDetailsContentComponent implements OnInit {
 
   ngOnInit(): void {
     this.checkWindowSize();
+    const { propertyDetails, amenities }=  this.propertyDetailsContent.body;
+    this.details = [...amenities];
 
-    const keys = Object.keys(this.propertyDetails);
+    const keys = Object.keys(propertyDetails);
     const middle = Math.ceil(keys.length / 2);
 
     keys.slice(0, middle).forEach((key) => {
-      if(this.propertyDetails[key]!== '')
+      if(propertyDetails[key]!== '')
       {
-        this.detailsColumnOne[key] =  this.propertyDetails[key];
+        this.detailsColumnOne[key] =  propertyDetails[key];
       }
     
     });
 
     keys.slice(middle).forEach((key) => {
-      this.detailsColumnTwo[key] = this.propertyDetails[key];
+      this.detailsColumnTwo[key] = propertyDetails[key];
     });
   }
 

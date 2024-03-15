@@ -2,25 +2,21 @@
     <header class="content-container-header">
         <div class="content-container-header-top">
             <div class="header-top-status">
-
-                <p class="header-top__type">FEATURED</p>
-                <p class="header-top__status">FOR RENT</p>
+                <p class="header-top__type">{{ propertyDetailsContent.header.statustitle }}</p>
+                <p class="header-top__status">{{ propertyDetailsContent.header.statussubtitle }}</p>
             </div>
-
             <div class="header-top-information">
-
                 <p class="header-top__date"><span><img src="./assets/image.jpeg" alt="calendar" srcset=""
-                            class="header-top__dateImage"></span>May 19, 2021</p>
+                            class="header-top__dateImage"></span>{{ propertyDetailsContent.header.publishDate }}</p>
                 <p class="header-top__comments"><span><img src="./assets/image.jpeg" alt="calendar" srcset=""
-                            class="header-top__dateImage"></span>35 Comments</p>
+                            class="header-top__dateImage"></span>{{ propertyDetailsContent.header.comments }} Comments</p>
             </div>
-
         </div>
 
         <div class="content-container-header-sub-top">
-            <h2 class="header-sub-top__title">Diamond Manor Apartment</h2>
+            <h2 class="header-sub-top__title">{{ propertyDetailsContent.header.title }}</h2>
             <p class="header-sub-top__subtitle"><span><img src="./assets/image.jpeg" alt="location"
-                        class="header-sub-top__location"></span>Belmont Gardens, Chicago</p>
+                        class="header-sub-top__location"></span>{{ propertyDetailsContent.header.location }}</p>
         </div>
 
     </header>
@@ -28,18 +24,7 @@
     <body class="content-container-body">
         <div class="content-container-body-description">
             <h3 class="body__title">Description</h3>
-            <p class="body__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, itaque enim
-                numquam asperiores facilis libero ipsum perferendis iste? Velit soluta repellat sint doloremque quos
-                excepturi aut veritatis fuga. Officia, voluptatum eius quaerat recusandae ratione deleniti repellat
-                aspernatur hic quisquam error facere labore quis quasi dolore quibusdam explicabo. Obcaecati
-                consequuntur rem libero qui iusto delectus. Repudiandae ea minus laboriosam facilis quasi id impedit
-                quis doloremque molestiae eaque laudantium eligendi eum qui, dolores debitis temporibus tempora!
-                Repellat, iusto nisi. Quaerat cumque distinctio, placeat quasi perspiciatis dicta dolorum officiis
-                asperiores officia eos! Ullam quod at rerum voluptatibus iure ratione beatae adipisci, laudantium sit.
-                <br><br>
-                To the left is the modern kitchen with central island, leading through to the unique breakfast family
-                room which feature glass walls and doors out onto the garden and access to the separate utility room.
-            </p>
+            <p class="body__description">{{ propertyDetailsContent.body.description }}</p>
         </div>
         <div class="content-container-body-description">
             <h3 class="body__title">Property Detail</h3>
@@ -63,17 +48,14 @@
         <div class="content-container-body-description">
             <h3 class="body__title">From Our Gallery</h3>
             <div class="body__gallery">
-                <img src="./assets/image.jpeg" alt="">
-                <img src="./assets/image.jpeg" alt="">
-                <img src="./assets/image.jpeg" alt="">
+                <img *ngFor="let image of propertyDetailsContent.body.gallery" [src]="image" [alt]="image">
             </div>
         </div>
 
-
-        <div class="content-container-body-description">
+       <div class="content-container-body-description">
             <h3 class="body__title">Amenities</h3>
             <div class="amenities-container">
-                <div *ngFor="let column of getAmenitiesColumns(amenities[0].amenities)" class="amenities-column">
+                <div *ngFor="let column of getAmenitiesColumns(details)" class="amenities-column">
                     <div *ngFor="let amenity of column" class="amenity-item">
                         <img src="./assets/icon/square-check-solid.svg" alt="" srcset=""> {{ amenity }}
                     </div>
@@ -87,7 +69,7 @@
                 <div class="gmap_canvas">
                     <iframe loading="async" class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
                         marginheight="0" marginwidth="0"
-                        src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=calle la rosa&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed&amp;loading=async"></iframe><a
+                        [src]="propertyDetailsContent.body.location"></iframe><a
                         href="https://embed-googlemap.com">google maps embed</a>
                 </div>
 
