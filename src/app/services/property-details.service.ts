@@ -9,7 +9,6 @@ export class PropertyDetailsService {
 
   constructor() { }
 
-  //todo: esto debe funcionar 
   GetAllDetails(id: number) : Observable<any>{
     const property = PropertyDetailsContent.find(p => p.id === id);
     return of(property);

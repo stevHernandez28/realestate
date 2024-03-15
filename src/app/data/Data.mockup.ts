@@ -137,7 +137,7 @@ export const PropertyDetailsContent : propertyDetailsContent[] =[ {
   header: {
     title: 'Gold Minor House',
     statustitle: "Featured",
-    statussubtitle: "For rent",
+    statussubtitle: "For Sell",
     publishDate: "May 19, 2021",
     comments: 35,
     location: 'Belmont Gardens, Chicago'
