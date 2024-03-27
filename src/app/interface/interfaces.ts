@@ -65,6 +65,11 @@ export interface PropertyDetails {
   'Property Status': string;
   
 }
+export interface propertyDetailsCarrusel {
+  id: number;
+  guid: string;
+  gallery: string[];
+}
 export interface propertyDetailsContent{
   id: number;
   guid:string;

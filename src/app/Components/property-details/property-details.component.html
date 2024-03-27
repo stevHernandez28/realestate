@@ -1,9 +1,7 @@
 <app-title Title="Property Detail" Direction=" Property-> Property-detail"></app-title>
-
 <section class="property-container">
-
-    <app-property-details-carrusel  ></app-property-details-carrusel>
+<app-property-details-carrusel [images]="image"></app-property-details-carrusel>
     <div class="property-container-content">
         <app-property-details-content [propertyDetailsContent]="propertyContent"></app-property-details-content>
     </div>
-</section>
+</section>  

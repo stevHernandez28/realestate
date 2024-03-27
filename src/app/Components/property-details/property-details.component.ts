@@ -13,7 +13,7 @@ import { PropertyDetailsService } from 'src/app/services/property-details.servic
 export class PropertyDetailsComponent implements OnInit{
 
   propertyContent! :  propertyDetailsContent
- 
+  image! : image[];
   constructor(private activatedRoute : ActivatedRoute, private detailsService: PropertyDetailsService){
 
   }
@@ -26,7 +26,7 @@ export class PropertyDetailsComponent implements OnInit{
     })
   }
   loadPropertyDetails(id: number) {
-    this.detailsService.GetAllDetails(id).subscribe({
+    this.detailsService.GetPropertyDetailsContentById(id).subscribe({
       next:(data)=>{
           this.propertyContent = data;
       },
@@ -34,25 +34,16 @@ export class PropertyDetailsComponent implements OnInit{
         console.log(e);
       }
     });
+
+    this.detailsService.GetPropertyDetailCarruselById(id).subscribe({
+      next:({ gallery })=>{
+        this.image = gallery
+        console.log(this.image);
+      },
+      error:(e)=>{
+        console.log(e)
+      }
+    })
   } 
-  //todo: eniviar desde el componente de detalles todos los datos que necesitan los componentes hijos
-  //TODO: hacer un servicio que por medio de la url + GUID pueda consultar una data y agregarlos al componente
-
-
-
-  image: image[] = [
-    {
-      url: './assets/image.jpeg'
-    },
-    {
-      url: './assets/image.jpeg'
-    },
-    {
-      url: './assets/image.jpeg'
-    },
-    {
-      url: './assets/image.jpeg'
-    },
-  ]
 
 }

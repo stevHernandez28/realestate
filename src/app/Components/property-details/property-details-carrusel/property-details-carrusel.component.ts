@@ -20,7 +20,7 @@ export class PropertyDetailsCarruselComponent implements OnInit {
       {
         breakpoint: '1199px',
         numVisible: 1,
-        numScroll: 1
+        numScroll: 1  
       },
       {
         breakpoint: '991px',

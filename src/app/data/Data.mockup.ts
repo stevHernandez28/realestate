@@ -1,4 +1,4 @@
-import {  CategoryImages, PropertyListItem, propertyDetailsContent } from "../interface/interfaces";
+import {  CategoryImages, PropertyListItem, propertyDetailsCarrusel, propertyDetailsContent } from "../interface/interfaces";
 
 export const dataPropertyList: PropertyListItem[] = [{
   id: 1,
@@ -85,7 +85,24 @@ export const images: CategoryImages[] = [
     listing: 'deals'
   },
 ]
+export const ProperyDetailsCarrusel  : propertyDetailsCarrusel[]  = [{
+  id:1,
+  guid: "010293-383830-383828",
+  gallery:[    
+    './assets/image.jpeg',
+    './assets/image.jpeg',
+    './assets/image.jpeg',
+    './assets/image.jpeg'
+  ]
+},{
+  id: 2,
+  guid: "55123-31233-12551",
+  gallery:[    
+    './assets/image.jpeg',
+    './assets/image.jpeg',
+  ] 
 
+}]
 
 
 export const PropertyDetailsContent : propertyDetailsContent[] =[ {
@@ -171,7 +188,6 @@ export const PropertyDetailsContent : propertyDetailsContent[] =[ {
     ,
     gallery: ['./assets/image.jpeg', './assets/image.jpeg', './assets/image.jpeg'],
     location: 'https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=calle la rosa&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed&amp;loading=async'
-  
   },
 
 }
